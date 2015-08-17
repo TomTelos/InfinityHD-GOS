@@ -1,0 +1,12 @@
+<skin>
+  <fonts>
+    <font filename="Ubuntu-R.ttf" name="Regular" scale="100" />
+    <font filename="Ubuntu-B.ttf" name="Bold" scale="100" />
+    <font filename="DroidSansMono.ttf" name="Console" scale="100" />
+    <font filename="Ubuntu-R.ttf" name="ChSelDesc" scale="100" />
+    <font filename="Ubuntu-R.ttf" name="EPGSelDesc" scale="100" />
+    <font filename="Ubuntu-R.ttf" name="EvDesc" scale="100" />
+    <font filename="Ubuntu-R.ttf" name="GraphDesc" scale="100" />
+    <font filename="Ubuntu-R.ttf" name="SIDesc" scale="100" />
+  </fonts>
+</skin>

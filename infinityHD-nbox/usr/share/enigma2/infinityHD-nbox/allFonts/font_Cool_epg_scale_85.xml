@@ -1,0 +1,12 @@
+<skin>
+  <fonts>
+    <font filename="cool.ttf" name="Regular" scale="100" />
+    <font filename="cool.ttf" name="Bold" scale="100" />
+    <font filename="DroidSansMono.ttf" name="Console" scale="100" />
+    <font filename="cool.ttf" name="ChSelDesc" scale="85" />
+    <font filename="cool.ttf" name="EPGSelDesc" scale="85" />
+    <font filename="cool.ttf" name="EvDesc" scale="85" />
+    <font filename="cool.ttf" name="GraphDesc" scale="85" />
+    <font filename="cool.ttf" name="SIDesc" scale="85" />
+  </fonts>
+</skin>

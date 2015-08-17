@@ -1,0 +1,35 @@
+<skin>
+<screen name="BitrateViewer" position="40,75" size="350,220" title="Bitrate viewer" flags="wfBorder">
+		<eLabel position="5,10" size="80,20" text="video" font="Bold;16" foregroundColor="TextHighlight" />
+		<eLabel position="5,30" size="80,20" text="min" font="Bold;16" />
+		<widget name="vmin" position="5,50" size="80,20" font="Bold;16" />
+		<eLabel position="85,30" size="80,20" text="max" font="Bold;16" />
+		<widget name="vmax" position="85,50" size="80,20" font="Bold;16" />
+		<eLabel position="165,30" size="80,20" text="average" font="Bold;16" />
+		<widget name="vavg" position="165,50" size="80,20" font="Bold;16" />
+		<eLabel position="245,30" size="80,20" text="current" font="Bold;16" />
+		<widget name="vcur" position="245,50" size="80,20" font="Bold;16" />
+		<eLabel position="5,80" size="80,20" text="audio" font="Bold;16" foregroundColor="TextHighlight" />
+		<eLabel position="5,100" size="80,20" text="min" font="Bold;16" />
+		<widget name="amin" position="5,120" size="80,20" font="Bold;16" />
+		<eLabel position="85,100" size="80,20" text="max" font="Bold;16" />
+		<widget name="amax" position="85,120" size="80,20" font="Bold;16" />
+		<eLabel position="165,100" size="80,20" text="average" font="Bold;16" />
+		<widget name="aavg" position="165,120" size="80,20" font="Bold;16" />
+		<eLabel position="245,100" size="80,20" text="current" font="Bold;16" />
+		<widget name="acur" position="245,120" size="80,20" font="Bold;16" />
+		<eLabel text="snr:" position="5,170" size="80,20" font="Bold; 16" valign="center" backgroundColor="BackTransparent" transparent="1" />
+		<widget source="session.FrontendStatus" render="Label" position="5,190" size="80,20" font="Bold; 16" valign="center" backgroundColor="BackTransparent" transparent="1">
+		<convert type="FrontendInfo">SNR</convert>
+		</widget>
+		<eLabel text="agc:" position="85,170" size="80,20" font="Bold; 16" valign="center" backgroundColor="BackTransparent" transparent="1" />
+		<widget source="session.FrontendStatus" render="Label" position="85,190" size="80,20" font="Bold; 16" valign="center" backgroundColor="BackTransparent" transparent="1">
+		<convert type="FrontendInfo">AGC</convert>
+		</widget>
+		<eLabel text="ber:" position="165,170" size="80,20" font="Bold; 16" valign="center" backgroundColor="BackTransparent" transparent="1" />
+		<widget source="session.FrontendStatus" render="Label" position="165,190" size="80,20" font="Bold; 16" valign="center" backgroundColor="BackTransparent" transparent="1" zPosition="2">
+		<convert type="FrontendInfo">BER</convert>
+		</widget>
+		<eLabel position="5,150" size="80,20" text="signal" font="Bold;16" foregroundColor="TextHighlight" />
+</screen>
+</skin>

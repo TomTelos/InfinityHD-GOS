@@ -1,0 +1,20 @@
+<skin>
+	<screen backgroundColor="Transparent" flags="wfNoBorder" name="VirtualZapPiconNoPiP" position="center,0" size="1280,720" title="Virtual Zap">
+	<widget source="global.CurrentTime" render="Label" position="1062,560" size="145,40" font="Bold; 33" valign="bottom" halign="right" backgroundColor="Black" transparent="1" foregroundColor="ClockCorner">
+	<convert type="ClockToText">Format:%H:%M</convert>
+	</widget>
+	<widget backgroundColor="Transparent" name="video" position="0,0" size="0,0" zPosition="1" />
+	<ePixmap position="center,519" zPosition="-1" size="1280,295" pixmap="infinityHD-GOS/infobar_2.png" />
+	<widget position="314,560" size="90,40" name="NowNum" font="Bold; 33" valign="bottom" halign="center" noWrap="1" backgroundColor="Black" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" foregroundColor="TextHighlight" />
+	<widget position="407,560" size="650,40" name="NowChannel" font="Bold; 33" valign="bottom" halign="left" noWrap="1" backgroundColor="Black" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" foregroundColor="TextHighlight" />
+	<widget name="vzPicon" position="78,564" size="220,132" zPosition="4" alphatest="blend" transparent="1" />
+	<widget position="316,613" size="85,35" name="NowEventStart" font="Regular; 28" valign="bottom" noWrap="1" backgroundColor="BackTransparent" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" halign="left" />
+	<widget position="407,613" size="650,35" name="NowEventTitle" font="Regular; 28" valign="bottom" noWrap="1" backgroundColor="BackTransparent" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" halign="left" />
+	<widget position="1062,613" size="145,35" name="NowTime" font="Regular; 28" valign="bottom" backgroundColor="BackTransparent" shadowColor="#000000" shadowOffset="-1,-1" halign="right" transparent="1" />
+	<widget position="316,654" size="85,35" name="NextEventStart" font="Regular; 28" valign="bottom" noWrap="1" foregroundColor="TextDimmed" backgroundColor="BackTransparent" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" halign="left" />
+	<widget position="407,654" size="650,35" name="NextEventTitle" font="Regular; 28" valign="bottom" noWrap="1" foregroundColor="TextDimmed" backgroundColor="BackTransparent" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" halign="left" />
+	<widget position="1062,654" size="145,35" name="NextTime" font="Regular; 28" valign="bottom" foregroundColor="TextDimmed" backgroundColor="BackTransparent" shadowColor="#000000" shadowOffset="-1,-1" halign="right" transparent="1" />
+	<eLabel name="ProgressbarBack" position="315,603" size="890,1" backgroundColor="ProgressbarBack" zPosition="4" />
+	<widget name="vzProgress" position="315,602" size="890,3" pixmap="infinityHD-GOS/progressGOS.png" transparent="1" zPosition="5" />
+	</screen>
+</skin>

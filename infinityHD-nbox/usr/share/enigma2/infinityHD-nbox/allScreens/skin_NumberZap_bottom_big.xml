@@ -1,0 +1,16 @@
+<skin>
+	<screen backgroundColor="Transparent" flags="wfNoBorder" name="NumberZap" position="center,0" size="1280,720">
+		<ePixmap position="center,519" zPosition="-1" size="1280,295" pixmap="infinityHD-GOS/infobar_2.png" />
+		<widget position="314,560" size="90,40" name="number" font="Bold; 33" valign="bottom" halign="center" noWrap="1" backgroundColor="Black" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" foregroundColor="TextHighlight" />
+		<widget position="407,560" size="754,40" name="servicename" font="Bold; 33" valign="bottom" halign="left" noWrap="1" backgroundColor="Black" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" foregroundColor="TextHighlight" />
+		<widget name="picon" position="78,564" size="220,132" zPosition="4" alphatest="blend" transparent="1" />
+		<eLabel name="ProgressbarBack" position="315,603" size="890,1" backgroundColor="ProgressbarBack" zPosition="4" />
+	</screen>
+	<screen backgroundColor="Transparent" flags="wfNoBorder" name="NumberZapExt" position="center,0" size="1280,720">
+		<ePixmap position="center,519" zPosition="-1" size="1280,295" pixmap="infinityHD-GOS/infobar_2.png" />
+		<widget position="314,560" size="90,40" name="chNum" font="Bold; 33" valign="bottom" halign="center" noWrap="1" backgroundColor="Black" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" foregroundColor="TextHighlight" />
+		<widget position="407,560" size="754,40" name="chName" font="Bold; 33" valign="bottom" halign="left" noWrap="1" backgroundColor="Black" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" foregroundColor="TextHighlight" />
+		<widget name="chPicon" position="78,564" size="220,132" zPosition="4" alphatest="blend" transparent="1" />
+		<eLabel name="ProgressbarBack" position="315,603" size="890,1" backgroundColor="ProgressbarBack" zPosition="4" />
+	</screen>
+</skin>

@@ -1,0 +1,60 @@
+<skin>
+<screen name="ChannelSelection" position="0,0" size="1280,720" title="" flags="wfNoBorder">
+    <ePixmap position="1220,35" size="14,14" pixmap="infinityHD-GOS/icons/clock.png" alphatest="on" zPosition="2" />
+    <widget source="session.VideoPicture" render="Pig" position="63,82" zPosition="3" size="435,245" backgroundColor="picture" />
+    <eLabel position="63,82" size="435,245" backgroundColor="Transparent" transparent="0" zPosition="4" foregroundColor="Transparent" />
+    <widget source="global.CurrentTime" render="Label" position="718,25" zPosition="0" size="493,35" font="Bold; 28" halign="right" transparent="1" backgroundColor="BackTransparent" foregroundColor="ClockCorner">
+      <convert type="inHDGOSClockToText">Format:%A - %d.%m.%Y - %H:%M</convert>
+    </widget>
+    <widget font="Bold; 28" halign="left" position="61,25" render="Label" size="652,35" source="Title" transparent="1" zPosition="2" />
+    <!--eLabel position="60,25" size="852,35" text="Channel Selection" halign="left" font="Bold; 28" transparent="1" zPosition="2" /-->
+    <eLabel position="60,65" size="1177,2" backgroundColor="TextForeground" zPosition="2" />
+    <widget source="ServiceEvent" render="Label" position="63,409" zPosition="1" size="500,216" font="ChSelDesc; 24" foregroundColor="TextLightDimmed" backgroundColor="BackTransparent" transparent="1" valign="top">
+      <convert type="EventName">FullDescription</convert>
+    </widget>
+    <ePixmap position="240,640" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_red.png" alphatest="on" zPosition="2" />
+    <ePixmap position="440,640" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_green.png" alphatest="on" zPosition="2" />
+    <ePixmap position="640,640" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" alphatest="on" zPosition="2" />
+    <ePixmap position="840,640" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_blue.png" alphatest="on" zPosition="2" />
+    <widget position="240,640" size="200,36" name="key_red" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
+    <widget position="440,640" size="200,36" name="key_green" font="Bold;19" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
+    <widget position="640,640" size="200,36" name="key_yellow" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
+    <widget position="840,640" size="200,36" name="key_blue" font="Bold;19" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" /> 
+    <widget source="ServiceEvent" render="Label" position="63,374" zPosition="1" size="75,30" font="Bold; 24" backgroundColor="BackTransparent" transparent="1" halign="right">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" position="473,374" zPosition="1" size="90,30" font="Bold; 24" backgroundColor="BackTransparent" transparent="1" halign="center">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget source="ServiceEvent" render="Progress" pixmap="infinityHD-GOS/progressGOS.png" position="150,388" zPosition="3" size="310,3" transparent="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <eLabel name="ProgressbarBack" position="150,389" size="310,1" backgroundColor="ProgressbarBack" zPosition="2" />
+    <widget source="Event" render="Label" position="63,339" zPosition="1" size="500,30" font="Bold; 24" valign="bottom" foregroundColor="TextHighlight" backgroundColor="BackTransparent" transparent="1" noWrap="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <eLabel text="Next" position="581,508" size="656,32" font="Bold; 26" halign="left" foregroundColor="TextHighlight" backgroundColor="BackTransparent" transparent="1" valign="top" zPosition="5" />
+    <eLabel position="581,497" size="656,2" backgroundColor="Stripe" zPosition="5" />
+	<widget source="ServiceEvent" render="Label" position="581,544" size="560,25" font="Regular; 22" zPosition="5" noWrap="1" transparent="1" valign="top" foregroundColor="TextLightDimmed" backgroundColor="BackTransparent">
+      <convert type="inHDGOSNextEvents">Event1,noDuration</convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" position="1147,544" size="90,25" font="Regular;22" foregroundColor="TextLightDimmed" backgroundColor="BackTransparent" zPosition="5" halign="right" valign="top" noWrap="1" transparent="1">
+      <convert type="inHDGOSNextEvents">Event1,onlyDuration</convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" position="581,572" size="560,25" font="Regular; 22" zPosition="5" noWrap="1" transparent="1" valign="top" foregroundColor="TextLightDimmed" backgroundColor="BackTransparent">
+      <convert type="inHDGOSNextEvents">Event2,noDuration</convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" position="1147,572" size="90,25" font="Regular;22" foregroundColor="TextLightDimmed" backgroundColor="BackTransparent" zPosition="5" halign="right" valign="top" noWrap="1" transparent="1">
+      <convert type="inHDGOSNextEvents">Event2,onlyDuration</convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" position="581,600" size="560,25" font="Regular; 22" zPosition="5" noWrap="1" transparent="1" valign="top" foregroundColor="TextLightDimmed" backgroundColor="BackTransparent">
+      <convert type="inHDGOSNextEvents">Event3,noDuration</convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" position="1147,600" size="90,25" font="Regular;22" foregroundColor="TextLightDimmed" backgroundColor="BackTransparent" zPosition="5" halign="right" valign="top" noWrap="1" transparent="1">
+      <convert type="inHDGOSNextEvents">Event3,onlyDuration</convert>
+    </widget>
+    <widget position="581,82" size="656,405" name="list" scrollbarMode="showOnDemand" transparent="1" zPosition="2" serviceItemHeight="27" foregroundColorEvent="CS_Event" foregroundColorEventSelected="CS_EventSelect" colorEventProgressbar="CS_Progress" colorEventProgressbarSelected="CS_ProgressSelect" colorEventProgressbarBorder="CS_ProgressBorder" colorEventProgressbarBorderSelected="CS_ProgressBorderSelect" foregroundColorServiceNotAvail="CS_ServiceNotAvail" foregroundColorMarked="CS_Marked" foregroundColorMarkedSelected="CS_MarkedSelect" backgroundColorMarked="CS_MarkedBack" backgroundColorMarkedSelected="CS_MarkedBackSelect" serviceNumberFont="Bold;26" serviceNameFont="Bold;26" serviceInfoFont="Regular;24" />
+</screen>
+</skin>

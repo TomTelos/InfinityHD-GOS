@@ -1,0 +1,44 @@
+<skin>
+	<screen backgroundColor="Transparent" flags="wfNoBorder" name="InfoBar" position="center,0" size="1280,720" title="InfoBar">
+    <widget source="global.CurrentTime" render="Label" position="1062,560" size="145,40" font="Bold; 33" valign="bottom" halign="right" backgroundColor="Black" transparent="1" foregroundColor="ClockCorner">
+	<convert type="ClockToText">Format:%H:%M</convert>
+	</widget>
+    <ePixmap position="center,520" zPosition="-1" size="1280,295" pixmap="infinityHD-GOS/infobar_2.png" />
+    <widget source="session.CurrentService" render="ChannelNumber" position="314,560" size="90,40" font="Bold; 33" valign="bottom" halign="center" transparent="1" backgroundColor="Black" shadowColor="#000000" shadowOffset="-1,-1" noWrap="1" foregroundColor="TextHighlight">
+    </widget>
+    <widget position="407,560" size="650,40" source="session.CurrentService" render="Label" font="Bold; 33" valign="bottom" halign="left" noWrap="1" backgroundColor="Black" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" foregroundColor="TextHighlight">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Picon" position="78,564" size="220,132" zPosition="4" alphatest="blend" transparent="1">
+      <convert type="ServiceName">Reference</convert>
+    </widget>
+    <widget position="316,613" size="85,35" source="session.Event_Now" render="Label" font="Regular; 28" valign="bottom" backgroundColor="BackTransparent" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" halign="left">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget position="407,613" size="650,35" source="session.Event_Now" render="Label" font="Regular; 28" valign="bottom" noWrap="1" backgroundColor="BackTransparent" shadowColor="#000000" shadowOffset="-1,-1" transparent="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget position="1062,613" size="145,35" source="session.Event_Now" render="Label" font="Regular; 28" valign="bottom" backgroundColor="BackTransparent" shadowColor="#000000" shadowOffset="-1,-1" halign="right" transparent="1">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <widget position="316,654" size="85,35" source="session.Event_Next" render="Label" font="Regular; 28" valign="bottom" backgroundColor="BackTransparent" foregroundColor="TextDimmed" transparent="1" halign="left">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget position="407,654" size="650,35" source="session.Event_Next" render="Label" font="Regular; 28" valign="bottom" noWrap="1" backgroundColor="BackTransparent" foregroundColor="TextDimmed" transparent="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget position="1062,654" size="145,35" source="session.Event_Next" render="Label" font="Regular; 28" valign="bottom" backgroundColor="BackTransparent" foregroundColor="TextDimmed" halign="right" transparent="1">
+      <convert type="EventTime">Duration</convert>
+      <convert type="ClockToText">InMinutes</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Progress" position="315,602" size="890,3" pixmap="infinityHD-GOS/progressGOS.png" transparent="1" zPosition="5">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <eLabel name="ProgressbarBack" position="315,603" size="890,1" backgroundColor="ProgressbarBack" zPosition="4" />
+    <!-- FOOTER - START -->
+    <!-- FOOTER - STOP -->
+	</screen>
+</skin>

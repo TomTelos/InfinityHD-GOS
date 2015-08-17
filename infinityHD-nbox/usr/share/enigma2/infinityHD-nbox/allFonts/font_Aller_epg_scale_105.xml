@@ -1,0 +1,12 @@
+<skin>
+  <fonts>
+    <font filename="Aller_Rg.ttf" name="Regular" scale="100" />
+    <font filename="Aller_Bd.ttf" name="Bold" scale="100" />
+    <font filename="DroidSansMono.ttf" name="Console" scale="100" />
+    <font filename="Aller_Rg.ttf" name="ChSelDesc" scale="105" />
+    <font filename="Aller_Rg.ttf" name="EPGSelDesc" scale="105" />
+    <font filename="Aller_Rg.ttf" name="EvDesc" scale="105" />
+    <font filename="Aller_Rg.ttf" name="GraphDesc" scale="105" />
+    <font filename="Aller_Rg.ttf" name="SIDesc" scale="105" />
+  </fonts>
+</skin>
