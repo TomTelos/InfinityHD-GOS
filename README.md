@@ -1,10 +1,6 @@
-infinityHD-nbox
+infinityHD-GOS
 ===============
-Skórka infinityHD-nbox kompatybilna z image OpenPLi.
-
-Z poziomu kontrolera możliwa jest zmiana wyglądu poszczególnych ekranów.
-
-<strong><em>Miłego użytkowania, herpoi</em></strong>
+Skórka infinityHD-GOS kompatybilna z image Graterlia i OpenPLi.
 
 ![Screenshot](https://raw.github.com/herpoi/infinityHD-nbox/master/Screenshots/Infobar_BP_Lite.jpg)
 ![Screenshot](https://raw.github.com/herpoi/infinityHD-nbox/master/Screenshots/Infobar_BP_Classic.jpg)
@@ -21,4 +17,3 @@ Z poziomu kontrolera możliwa jest zmiana wyglądu poszczególnych ekranów.
 ![Screenshot](https://raw.github.com/herpoi/infinityHD-nbox/master/Screenshots/NumberZapExt.jpg)
 ![Screenshot](https://raw.github.com/herpoi/infinityHD-nbox/master/Screenshots/EPGSearch.jpg)
 ![Screenshot](https://raw.github.com/herpoi/infinityHD-nbox/master/Screenshots/WindowStyle_New.jpg)
-![Screenshot](https://raw.github.com/herpoi/infinityHD-nbox/master/Screenshots/inHDcontroler.jpg)
