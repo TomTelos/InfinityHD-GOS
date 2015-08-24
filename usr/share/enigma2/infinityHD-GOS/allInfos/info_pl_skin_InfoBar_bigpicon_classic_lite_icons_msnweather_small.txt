@@ -1,1 +1,0 @@
-﻿Wymaga wtyczek: weatherplugin, weathercomponenthandler [TomTelos]

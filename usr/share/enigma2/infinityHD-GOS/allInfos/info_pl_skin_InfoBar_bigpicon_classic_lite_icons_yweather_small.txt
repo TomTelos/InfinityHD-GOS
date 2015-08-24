@@ -1,1 +1,1 @@
-﻿Wymaga wtyczki: yweather [TomTelos]
+﻿Wymaga wtyczki: yweather [autor: TomTelos]
