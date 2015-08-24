@@ -989,47 +989,6 @@
     <widget source="HDDHeader" render="Label" position="13,485" size="750,25" font="Bold;24" halign="center" backgroundColor="BackTransparent" transparent="1" />
     <widget source="hddA" render="Label" position="13,520" size="750,79" font="Regular; 22" halign="center" backgroundColor="BackTransparent" transparent="1" />
   </screen>
-  <screen name="AdapterSetup" position="90,100" size="1100,560" title="Network Setup">
-    <eLabel position="0,0" size="1100,2" backgroundColor="Grey" />
-    <widget name="Adaptertext" position="20,20" size="140,25" zPosition="10" font="Bold;22" transparent="1" />
-    <widget name="Adapter" position="160,20" size="400,25" zPosition="10" font="Bold;22" transparent="1" />
-    <eLabel position="20,55" size="740,2" backgroundColor="Grey" />
-    <widget name="config" position="20,70" size="740,375" scrollbarMode="showOnDemand" transparent="1" />
-    <widget source="introduction2" render="Label" position="20,472" size="740,30" zPosition="10" font="Bold;24" halign="center" transparent="1" />
-    <eLabel position="780,0" size="2,518" backgroundColor="Grey" />
-    <widget source="introduction" render="Label" position="790,20" size="300,25" font="Bold;22" halign="center" />
-    <widget source="IPtext" render="Label" position="790,60" size="300,22" zPosition="1" font="Bold;20" halign="center" foregroundColor="BackTransparent" backgroundColor="Grey" />
-    <widget source="IP" render="Label" position="790,90" size="300,22" zPosition="1" font="Bold;20" halign="center" />
-    <widget source="Netmasktext" render="Label" position="790,130" size="300,22" zPosition="1" font="Bold;20" halign="center" foregroundColor="BackTransparent" backgroundColor="Grey" />
-    <widget source="Mask" render="Label" position="790,160" size="300,22" zPosition="1" font="Bold;20" halign="center" />
-    <widget source="Gatewaytext" render="Label" position="790,200" size="300,22" zPosition="1" font="Bold;20" halign="center" foregroundColor="BackTransparent" backgroundColor="Grey" />
-    <widget source="Gateway" render="Label" position="790,230" size="300,22" zPosition="1" font="Bold;20" halign="center" />
-    <widget source="DNS1text" render="Label" position="790,270" size="300,22" zPosition="1" font="Bold;20" halign="center" foregroundColor="BackTransparent" backgroundColor="Grey" />
-    <widget source="DNS1" render="Label" position="790,300" size="300,22" zPosition="1" font="Bold;20" halign="center" />
-    <widget source="DNS2text" render="Label" position="790,340" size="300,22" zPosition="1" font="Bold;20" halign="center" foregroundColor="BackTransparent" backgroundColor="Grey" />
-    <widget source="DNS2" render="Label" position="790,370" size="300,22" zPosition="1" font="Bold;20" halign="center" />
-    <eLabel position="0,518" size="1100,2" backgroundColor="Grey" />
-    <widget name="HelpWindow" position="180,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
-    <widget name="VKeyIcon" pixmap="skin_default/buttons/key_text.png" position="30,370" zPosition="10" size="35,25" transparent="1" alphatest="on" />
-    <ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_red.png" position="150,525" size="200,60" alphatest="on" zPosition="2" />
-    <ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_blue.png" position="750,525" size="200,60" alphatest="on" zPosition="2" />
-    <widget source="key_red" render="Label" position="150,525" size="200,36" font="Bold;20" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
-    <widget source="key_blue" render="Label" position="750,525" size="200,36" font="Bold;20" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />
-  </screen>
-  <screen name="AdapterSetupConfiguration" position="90,100" size="1100,560" title="Network Configuration...">
-    <eLabel position="0,0" size="1100,2" backgroundColor="Grey" />
-    <widget name="IFtext" position="20,20" size="140,25" zPosition="10" font="Bold;22" transparent="1" />
-    <widget name="IF" position="160,20" size="400,25" zPosition="10" font="Bold;22" transparent="1" />
-    <eLabel position="20,55" size="740,2" backgroundColor="Grey" />
-    <widget name="menulist" position="20,70" size="740,375" scrollbarMode="showOnDemand" transparent="1" />
-    <eLabel position="780,0" size="2,518" backgroundColor="Grey" />
-    <widget name="description" position="790,20" size="300,480" font="Bold;22" halign="center" valign="center" />
-    <eLabel position="0,518" size="1100,2" backgroundColor="Grey" />
-    <widget source="Statustext" render="Label" position="20,525" size="150,30" zPosition="10" font="Bold;24" transparent="1" />
-    <widget name="statuspic" position="180,530" size="15,16" pixmaps="skin_default/buttons/button_green.png,skin_default/buttons/button_green_off.png" zPosition="10" transparent="1" alphatest="on" />
-    <ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_red.png" position="750,525" size="200,60" alphatest="on" zPosition="2" />
-    <widget source="key_red" render="Label" position="750,525" size="200,36" font="Bold;20" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
-  </screen>
   <screen name="BouquetSelector" position="340,150" size="600,300" title="Choose bouquet">
     <eLabel position="0,0" size="600,2" backgroundColor="Grey" />
     <widget name="menu" position="20,20" size="560,260" scrollbarMode="showOnDemand" transparent="1" />
@@ -1357,92 +1316,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="key_yellow" position="550,525" size="200,36" font="Bold;20" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
     <widget name="key_blue" position="750,525" size="200,36" font="Bold;20" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />
   </screen>
-  <screen name="NameserverSetup" position="90,100" size="1100,560" title="Nameserver Setup">
-    <eLabel position="0,0" size="1100,2" backgroundColor="Grey" />
-    <eLabel position="20,55" size="740,2" backgroundColor="Grey" />
-    <widget name="config" position="20,70" size="740,375" scrollbarMode="showOnDemand" transparent="1" />
-    <widget name="introduction" position="20,470" size="740,30" zPosition="10" font="Bold;24" halign="center" transparent="1" />
-    <eLabel position="780,0" size="2,518" backgroundColor="Grey" />
-    <eLabel position="0,518" size="1100,2" backgroundColor="Grey" />
-    <ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_red.png" position="250,525" size="200,60" alphatest="on" zPosition="2" />
-    <ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_green.png" position="450,525" size="200,60" alphatest="on" zPosition="2" />
-    <ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" position="650,525" size="200,60" alphatest="on" zPosition="2" />
-    <widget source="key_red" render="Label" position="250,525" size="200,36" font="Bold;20" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
-    <widget source="key_green" render="Label" position="450,525" size="200,36" font="Bold;20" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
-    <widget source="key_yellow" render="Label" position="650,525" size="200,36" font="Bold;20" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
-  </screen>
-  <screen name="NetworkAdapterSelection" position="90,100" size="1100,560" title="Select Network Adapter">
-    <eLabel position="0,0" size="1100,2" backgroundColor="Grey" />
-    <eLabel position="20,55" size="740,2" backgroundColor="Grey" />
-    <widget source="list" render="Listbox" position="20,70" size="740,375" zPosition="10" scrollbarMode="showOnDemand">
-      <convert type="TemplatedMultiContent">
-        <!--  iface, name, description, interfacepng, defaultpng, activepng, divpng  -->
-				{"template": [
-						MultiContentEntryText(pos = (85, 6), size = (440, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1), # index 1 is the interfacename
-						MultiContentEntryText(pos = (85, 43), size = (440, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM, text = 2), # index 2 is the description
-						MultiContentEntryPixmapAlphaTest(pos = (2, 8), size = (54, 54), png = 3), # index 3 is the interface pixmap
-						MultiContentEntryPixmapAlphaTest(pos = (63, 46), size = (15, 16), png = 4), # index 4 is the default pixmap
-					],
-				"fonts": [gFont("Bold", 28),gFont("Bold", 20)],
-				"itemHeight": 70
-				}
-			</convert>
-    </widget>
-    <widget name="introduction" position="20,470" size="740,30" zPosition="10" font="Bold;24" halign="center" transparent="1" />
-    <eLabel position="780,0" size="2,518" backgroundColor="Grey" />
-    <eLabel position="0,518" size="1100,2" backgroundColor="Grey" />
-    <ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_red.png" position="250,525" size="200,60" alphatest="on" zPosition="2" />
-    <ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_green.png" position="450,525" size="200,60" alphatest="on" zPosition="2" />
-    <ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" position="650,525" size="200,60" alphatest="on" zPosition="2" />
-    <widget source="key_red" render="Label" position="250,525" size="200,36" font="Bold;20" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
-    <widget source="key_green" render="Label" position="450,525" size="200,36" font="Bold;20" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
-    <widget source="key_yellow" render="Label" position="650,525" size="200,36" font="Bold;20" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
-  </screen>
-  <screen name="NetworkAdapterTest" position="90,100" size="1100,560" title="Network test...">
-    <eLabel position="0,0" size="1100,2" backgroundColor="Grey" />
-    <widget name="Adaptertext" position="20,20" size="650,25" zPosition="1" font="Bold;22" foregroundColor="Grey" />
-    <widget name="Adapter" position="20,50" size="650,25" zPosition="1" font="Bold;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" />
-    <widget name="AdapterInfo_OK" position="720,35" size="38,31" zPosition="2" pixmap="skin_default/icons/lock_on.png" alphatest="on" />
-    <widget name="AdapterInfo" position="782,27" size="318,50" zPosition="1" pixmaps="infinityHD-GOS/menu/select300_45black.png,infinityHD-GOS/menu/select600_50.png" />
-    <widget name="AdapterInfo_Text" position="782,27" size="318,50" zPosition="2" font="Bold;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" />
-    <eLabel position="20,90" size="740,1" backgroundColor="DarkGrey" />
-    <widget name="Networktext" position="20,100" size="650,25" zPosition="1" font="Bold;22" foregroundColor="Grey" />
-    <widget name="Network" position="20,130" size="650,25" zPosition="1" font="Bold;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" />
-    <widget name="NetworkInfo_Check" position="720,115" size="38,31" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on" />
-    <widget name="NetworkInfo" position="782,107" size="318,50" zPosition="1" pixmaps="infinityHD-GOS/menu/select300_45black.png,infinityHD-GOS/menu/select600_50.png" />
-    <widget name="NetworkInfo_Text" position="782,107" size="318,50" zPosition="2" font="Bold;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" />
-    <eLabel position="20,170" size="740,1" backgroundColor="DarkGrey" />
-    <widget name="Dhcptext" position="20,180" size="650,25" zPosition="1" font="Bold;22" foregroundColor="Grey" />
-    <widget name="Dhcp" position="20,210" size="650,25" zPosition="1" font="Bold;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" />
-    <widget name="DhcpInfo_Check" position="720,195" size="38,31" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on" />
-    <widget name="DhcpInfo" position="782,187" size="318,50" zPosition="1" pixmaps="infinityHD-GOS/menu/select300_45black.png,infinityHD-GOS/menu/select600_50.png" />
-    <widget name="DhcpInfo_Text" position="782,187" size="318,50" zPosition="2" font="Bold;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" />
-    <eLabel position="20,250" size="740,1" backgroundColor="DarkGrey" />
-    <widget name="IPtext" position="20,260" size="650,25" zPosition="1" font="Bold;22" foregroundColor="Grey" />
-    <widget name="IP" position="20,290" size="650,25" zPosition="1" font="Bold;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" />
-    <widget name="IPInfo_Check" position="720,275" size="38,31" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on" />
-    <widget name="IPInfo" position="782,267" size="318,50" zPosition="1" pixmaps="infinityHD-GOS/menu/select300_45black.png,infinityHD-GOS/menu/select600_50.png" />
-    <widget name="IPInfo_Text" position="782,267" size="318,50" zPosition="2" font="Bold;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" />
-    <eLabel position="20,330" size="740,1" backgroundColor="DarkGrey" />
-    <widget name="DNStext" position="20,340" size="650,25" zPosition="1" font="Bold;22" foregroundColor="Grey" />
-    <widget name="DNS" position="20,370" size="650,25" zPosition="1" font="Bold;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" />
-    <widget name="DNSInfo_Check" position="720,355" size="38,31" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on" />
-    <widget name="DNSInfo" position="782,347" size="318,50" zPosition="1" pixmaps="infinityHD-GOS/menu/select300_45black.png,infinityHD-GOS/menu/select600_50.png" />
-    <widget name="DNSInfo_Text" position="782,347" size="318,50" zPosition="2" font="Bold;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" />
-    <eLabel position="20,410" size="740,1" backgroundColor="DarkGrey" />
-    <widget name="EditSettingsButton" position="782,427" size="318,50" zPosition="1" pixmaps="infinityHD-GOS/menu/select300_45black.png,infinityHD-GOS/menu/select600_50.png" />
-    <widget name="EditSettings_Text" position="782,427" size="318,50" zPosition="2" font="Bold;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" />
-    <widget name="InfoText" position="20,22" size="740,476" zPosition="25" font="Bold;24" halign="center" valign="center" />
-    <eLabel position="780,0" size="2,518" backgroundColor="Grey" />
-    <eLabel position="0,518" size="1100,2" backgroundColor="Grey" />
-    <ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_red.png" position="250,525" size="200,60" alphatest="on" zPosition="2" />
-    <ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_green.png" position="450,525" size="200,60" alphatest="on" zPosition="2" />
-    <ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" position="650,525" size="200,60" alphatest="on" zPosition="2" />
-    <widget source="key_red" render="Label" position="250,525" size="200,36" font="Bold;20" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
-    <widget source="key_green" render="Label" position="450,525" size="200,36" font="Bold;20" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
-    <widget source="key_yellow" render="Label" position="650,525" size="200,36" font="Bold;20" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
-    <widget name="InfoTextBorder" position="0,0" size="0,0" />
-  </screen>
   <screen name="NimSelection" position="240,134" size="800,422" title="Choose Tuner">
     <eLabel position="0,0" size="800,2" backgroundColor="Grey" zPosition="5" />
     <widget source="nimlist" render="Listbox" position="0,0" size="800,420" transparent="1">
@@ -1460,21 +1333,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <screen name="NimSetup" position="340,134" size="600,502" title="Reception Settings">
     <eLabel position="0,0" size="600,2" backgroundColor="Grey" zPosition="5" />
     <widget name="config" position="10,12" size="580,475" transparent="1" />
-  </screen>
-  <screen name="NumericalTextInputHelpDialog" position="center,500" zPosition="2" size="1280,220" backgroundColor="BackTransparent" flags="wfNoBorder">
-    <eLabel position="center,0" size="750,200" backgroundColor="TextDimmed" zPosition="-1" />
-    <widget name="key1" position="265,0" size="250,50" font="Console;22" halign="center" valign="center" />
-    <widget name="key2" position="center,0" size="250,50" font="Console;22" halign="center" valign="center" />
-    <widget name="key3" position="765,0" size="250,50" font="Console;22" halign="center" valign="center" />
-    <widget name="key4" position="265,50" size="250,50" font="Console;22" halign="center" valign="center" />
-    <widget name="key5" position="515,50" size="250,50" font="Console;22" halign="center" valign="center" />
-    <widget name="key6" position="765,50" size="250,50" font="Console;22" halign="center" valign="center" />
-    <widget name="key7" position="265,100" size="250,50" font="Console;22" halign="center" valign="center" />
-    <widget name="key8" position="center,100" size="250,50" font="Console;22" halign="center" valign="center" />
-    <widget name="key9" position="765,100" size="250,50" font="Console;22" halign="center" valign="center" />
-    <widget name="help1" position="265,150" size="250,50" font="Console;22" halign="center" valign="center" />
-    <widget name="key0" position="center,150" size="250,50" font="Console;22" halign="center" valign="center" />
-    <widget name="help2" position="765,150" size="250,50" font="Console;22" halign="center" valign="center" />
   </screen>
   <screen name="ParentalControlChangePin" position="340,134" size="600,502" title="Change pin code">
     <eLabel position="0,0" size="600,2" backgroundColor="Grey" zPosition="5" />
@@ -1843,6 +1701,286 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="StringList" />
     </widget>
   </screen>
+<screen name="NumericalTextInputHelpDialog" position="484,494" zPosition="2" size="756,206" backgroundColor="Grey" flags="wfNoBorder">
+    <eLabel position="3,3" size="750,200" backgroundColor="TextDimmed" zPosition="-1" />
+    <widget name="key1" position="3,3" size="250,50" font="Console;22" halign="center" valign="center" />
+    <widget name="key2" position="253,3" size="250,50" font="Console;22" halign="center" valign="center" />
+    <widget name="key3" position="503,3" size="250,50" font="Console;22" halign="center" valign="center" />
+    <widget name="key4" position="3,53" size="250,50" font="Console;22" halign="center" valign="center" />
+    <widget name="key5" position="253,53" size="250,50" font="Console;22" halign="center" valign="center" />
+    <widget name="key6" position="503,53" size="250,50" font="Console;22" halign="center" valign="center" />
+    <widget name="key7" position="3,103" size="250,50" font="Console;22" halign="center" valign="center" />
+    <widget name="key8" position="253,103" size="250,50" font="Console;22" halign="center" valign="center" />
+    <widget name="key9" position="503,103" size="250,50" font="Console;22" halign="center" valign="center" />
+    <widget name="help1" position="3,153" size="250,50" font="Console;22" halign="center" valign="center" />
+    <widget name="key0" position="253,153" size="250,50" font="Console;22" halign="center" valign="center" />
+    <widget name="help2" position="503,153" size="250,50" font="Console;22" halign="center" valign="center" />
+</screen>
+<screen name="AdapterSetup" position="center,77" size="1100,585" title="Network Setup">
+    <eLabel position="0,0" size="1100,2" backgroundColor="Grey" />
+    <widget name="Adaptertext" position="20,20" size="140,25" zPosition="10" font="Bold;22" transparent="1" />
+    <widget name="Adapter" position="160,20" size="400,25" zPosition="10" font="Bold;22" transparent="1" />
+    <eLabel position="20,55" size="740,2" backgroundColor="Grey" />
+    <widget name="config" position="20,70" size="740,375" scrollbarMode="showOnDemand" transparent="1" />
+    <widget source="introduction2" render="Label" position="20,472" size="740,30" zPosition="10" font="Bold;24" halign="center" transparent="1" />
+    <eLabel position="780,0" size="2,518" backgroundColor="Grey" />
+    <widget source="introduction" render="Label" position="790,20" size="300,25" font="Bold;22" halign="center" />
+    <widget source="IPtext" render="Label" position="790,60" size="300,22" zPosition="1" font="Bold;20" halign="center" foregroundColor="BackTransparent" backgroundColor="Grey" />
+    <widget source="IP" render="Label" position="790,90" size="300,22" zPosition="1" font="Bold;20" halign="center" />
+    <widget source="Netmasktext" render="Label" position="790,130" size="300,22" zPosition="1" font="Bold;20" halign="center" foregroundColor="BackTransparent" backgroundColor="Grey" />
+    <widget source="Mask" render="Label" position="790,160" size="300,22" zPosition="1" font="Bold;20" halign="center" />
+    <widget source="Gatewaytext" render="Label" position="790,200" size="300,22" zPosition="1" font="Bold;20" halign="center" foregroundColor="BackTransparent" backgroundColor="Grey" />
+    <widget source="Gateway" render="Label" position="790,230" size="300,22" zPosition="1" font="Bold;20" halign="center" />
+    <widget source="DNS1text" render="Label" position="790,270" size="300,22" zPosition="1" font="Bold;20" halign="center" foregroundColor="BackTransparent" backgroundColor="Grey" />
+    <widget source="DNS1" render="Label" position="790,300" size="300,22" zPosition="1" font="Bold;20" halign="center" />
+    <widget source="DNS2text" render="Label" position="790,340" size="300,22" zPosition="1" font="Bold;20" halign="center" foregroundColor="BackTransparent" backgroundColor="Grey" />
+    <widget source="DNS2" render="Label" position="790,370" size="300,22" zPosition="1" font="Bold;20" halign="center" />
+    <eLabel position="0,518" size="1100,2" backgroundColor="Grey" />
+    <widget name="HelpWindow" position="484,494" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+	<widget name="VKeyIcon" pixmap="skin_default/buttons/key_text.png" alphatest="on" zPosition="1" position="63,528" size="35,25" />
+	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_red.png" position="150,525" size="200,60" alphatest="on" zPosition="2" />
+	<widget source="key_red" render="Label" position="150,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
+	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_blue.png" position="750,525" size="200,60" alphatest="on" zPosition="2" />
+	<widget source="key_blue" render="Label" position="750,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />
+</screen>
+<screen name="AdapterSetupConfiguration" position="center,77" size="1100,585" title="Network Configuration...">
+    <eLabel position="0,0" size="1100,2" backgroundColor="Grey" />
+    <widget name="IFtext" position="20,20" size="140,25" zPosition="10" font="Bold;22" transparent="1" />
+    <widget name="IF" position="160,20" size="400,25" zPosition="10" font="Bold;22" transparent="1" />
+    <eLabel position="20,55" size="740,2" backgroundColor="Grey" />
+    <widget name="menulist" position="20,70" size="740,375" scrollbarMode="showOnDemand" transparent="1" />
+    <eLabel position="780,0" size="2,518" backgroundColor="Grey" />
+    <widget name="description" position="790,20" size="300,480" font="Bold;22" halign="center" valign="center" />
+    <eLabel position="0,518" size="1100,2" backgroundColor="Grey" />
+    <widget source="Statustext" render="Label" position="20,470" size="150,30" zPosition="10" font="Bold;24" transparent="1" />
+    <widget name="statuspic" position="180,475" size="15,16" pixmaps="skin_default/buttons/button_green.png,skin_default/buttons/button_green_off.png" zPosition="10" transparent="1" alphatest="on" />
+	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_red.png" position="150,525" size="200,60" alphatest="on" zPosition="2" />
+	<widget source="key_red" render="Label" position="150,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
+</screen>
+<screen name="NameserverSetup" position="center,77" size="1100,585" title="Nameserver Setup">
+    <eLabel position="0,0" size="1100,2" backgroundColor="Grey" />
+    <eLabel position="20,55" size="740,2" backgroundColor="Grey" />
+    <widget name="config" position="20,70" size="740,375" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="introduction" position="20,470" size="740,30" zPosition="10" font="Bold;24" halign="center" transparent="1" />
+    <eLabel position="780,0" size="2,518" backgroundColor="Grey" />
+    <eLabel position="0,518" size="1100,2" backgroundColor="Grey" />
+	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_red.png" position="150,525" size="200,60" alphatest="on" zPosition="2" />
+	<widget source="key_red" render="Label" position="150,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
+	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_green.png" position="350,525" size="200,60" alphatest="on" zPosition="2" />
+	<widget source="key_green" render="Label" position="350,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
+	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" position="550,525" size="200,60" alphatest="on" zPosition="2" />
+	<widget source="key_yellow" render="Label" position="550,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
+</screen>
+<screen name="NetworkAdapterSelection" position="center,77" size="1100,585" title="Select Network Adapter">
+    <eLabel position="0,0" size="1100,2" backgroundColor="Grey" />
+    <eLabel position="20,55" size="740,2" backgroundColor="Grey" />
+    <widget source="list" render="Listbox" position="20,70" size="740,375" zPosition="10" scrollbarMode="showOnDemand">
+      <convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (85, 6), size = (440, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1), # index 1 is the interfacename
+						MultiContentEntryText(pos = (85, 43), size = (440, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM, text = 2), # index 2 is the description
+						MultiContentEntryPixmapAlphaTest(pos = (2, 8), size = (54, 54), png = 3), # index 3 is the interface pixmap
+						MultiContentEntryPixmapAlphaTest(pos = (63, 46), size = (15, 16), png = 4), # index 4 is the default pixmap
+					],
+				"fonts": [gFont("Bold", 28),gFont("Bold", 20)],
+				"itemHeight": 70
+				}
+			</convert>
+    </widget>
+    <widget name="introduction" position="20,470" size="740,30" zPosition="10" font="Bold;24" halign="center" transparent="1" />
+    <eLabel position="780,0" size="2,518" backgroundColor="Grey" />
+    <eLabel position="0,518" size="1100,2" backgroundColor="Grey" />
+	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_red.png" position="150,525" size="200,60" alphatest="on" zPosition="2" />
+	<widget source="key_red" render="Label" position="150,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
+	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_green.png" position="350,525" size="200,60" alphatest="on" zPosition="2" />
+	<widget source="key_green" render="Label" position="350,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
+	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" position="550,525" size="200,60" alphatest="on" zPosition="2" />
+	<widget source="key_yellow" render="Label" position="550,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
+</screen>
+<screen name="NetworkAdapterTest" position="90,77" size="1100,585" title="Network test...">
+    <eLabel position="0,0" size="1100,2" backgroundColor="Grey" />
+    <widget name="Adaptertext" position="20,20" size="650,25" zPosition="1" font="Bold;22" foregroundColor="Grey" />
+    <widget name="Adapter" position="20,50" size="650,25" zPosition="1" font="Bold;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" />
+    <widget name="AdapterInfo_OK" position="720,35" size="38,31" zPosition="2" pixmap="skin_default/icons/lock_on.png" alphatest="on" />
+    <widget name="AdapterInfo" position="782,27" size="318,50" zPosition="1" pixmaps="skin_default/menu/select300_45black.png,skin_default/menu/select600_50.png" />
+    <widget name="AdapterInfo_Text" position="782,27" size="318,50" zPosition="2" font="Bold;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" />
+    <eLabel position="20,90" size="740,1" backgroundColor="DarkGrey" />
+    <widget name="Networktext" position="20,100" size="650,25" zPosition="1" font="Bold;22" foregroundColor="Grey" />
+    <widget name="Network" position="20,130" size="650,25" zPosition="1" font="Bold;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" />
+    <widget name="NetworkInfo_Check" position="720,115" size="38,31" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on" />
+    <widget name="NetworkInfo" position="782,107" size="318,50" zPosition="1" pixmaps="skin_default/menu/select300_45black.png,skin_default/menu/select600_50.png" />
+    <widget name="NetworkInfo_Text" position="782,107" size="318,50" zPosition="2" font="Bold;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" />
+    <eLabel position="20,170" size="740,1" backgroundColor="DarkGrey" />
+    <widget name="Dhcptext" position="20,180" size="650,25" zPosition="1" font="Bold;22" foregroundColor="Grey" />
+    <widget name="Dhcp" position="20,210" size="650,25" zPosition="1" font="Bold;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" />
+    <widget name="DhcpInfo_Check" position="720,195" size="38,31" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on" />
+    <widget name="DhcpInfo" position="782,187" size="318,50" zPosition="1" pixmaps="skin_default/menu/select300_45black.png,skin_default/menu/select600_50.png" />
+    <widget name="DhcpInfo_Text" position="782,187" size="318,50" zPosition="2" font="Bold;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" />
+    <eLabel position="20,250" size="740,1" backgroundColor="DarkGrey" />
+    <widget name="IPtext" position="20,260" size="650,25" zPosition="1" font="Bold;22" foregroundColor="Grey" />
+    <widget name="IP" position="20,290" size="650,25" zPosition="1" font="Bold;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" />
+    <widget name="IPInfo_Check" position="720,275" size="38,31" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on" />
+    <widget name="IPInfo" position="782,267" size="318,50" zPosition="1" pixmaps="skin_default/menu/select300_45black.png,skin_default/menu/select600_50.png" />
+    <widget name="IPInfo_Text" position="782,267" size="318,50" zPosition="2" font="Bold;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" />
+    <eLabel position="20,330" size="740,1" backgroundColor="DarkGrey" />
+    <widget name="DNStext" position="20,340" size="650,25" zPosition="1" font="Bold;22" foregroundColor="Grey" />
+    <widget name="DNS" position="20,370" size="650,25" zPosition="1" font="Bold;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" />
+    <widget name="DNSInfo_Check" position="720,355" size="38,31" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on" />
+    <widget name="DNSInfo" position="782,347" size="318,50" zPosition="1" pixmaps="skin_default/menu/select300_45black.png,skin_default/menu/select600_50.png" />
+    <widget name="DNSInfo_Text" position="782,347" size="318,50" zPosition="2" font="Bold;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" />
+    <eLabel position="20,410" size="740,1" backgroundColor="DarkGrey" />
+    <widget name="EditSettingsButton" position="782,427" size="318,50" zPosition="1" pixmaps="skin_default/menu/select300_45black.png,skin_default/menu/select600_50.png" />
+    <widget name="EditSettings_Text" position="782,427" size="318,50" zPosition="2" font="Bold;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" />
+    <widget name="InfoText" position="20,22" size="740,476" zPosition="25" font="Bold;24" halign="center" valign="center" />
+    <eLabel position="780,0" size="2,518" backgroundColor="Grey" />
+    <eLabel position="0,518" size="1100,2" backgroundColor="Grey" />
+	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_red.png" position="150,525" size="200,60" alphatest="on" zPosition="2" />
+	<widget source="key_red" render="Label" position="150,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
+	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_green.png" position="350,525" size="200,60" alphatest="on" zPosition="2" />
+	<widget source="key_green" render="Label" position="350,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
+	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" position="550,525" size="200,60" alphatest="on" zPosition="2" />
+	<widget source="key_yellow" render="Label" position="550,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
+    <widget name="InfoTextBorder" position="0,0" size="0,0" />
+</screen>
+<screen name="UserDialog" position="center,77" size="1100,585" title="UserDialog">
+	<eLabel position="0,0" size="1100,2" backgroundColor="Grey" />
+	<eLabel position="20,55" size="740,2" backgroundColor="Grey" />
+	<widget name="config" position="20,70" size="740,375" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="1" />
+	<widget source="introduction" render="Label" position="20,470" size="740,30" zPosition="10" font="Bold;24" halign="center" transparent="1" />
+	<eLabel position="780,0" size="2,518" backgroundColor="Grey" />
+	<eLabel position="0,518" size="1100,2" backgroundColor="Grey" />
+	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_red.png" position="150,525" size="200,60" alphatest="on" zPosition="2" />
+	<widget source="key_red" render="Label" position="150,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
+	<widget name="VKeyIcon" pixmap="skin_default/buttons/key_text.png" alphatest="on" zPosition="1" position="63,528" size="35,25" />
+	<widget name="HelpWindow" position="484,494" size="1,1" zPosition="1" transparent="1" alphatest="on" />
+</screen>
+<screen name="AutoMountManager" title="MountManager" position="center,77" size="1100,585">
+    <eLabel position="0,0" size="1100,2" backgroundColor="Grey" />
+	<eLabel position="20,55" size="740,2" backgroundColor="Grey" />
+	<eLabel position="780,0" size="2,518" backgroundColor="Grey" />
+	<eLabel position="0,518" size="1100,2" backgroundColor="Grey" />
+	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_red.png" position="150,525" size="200,60" alphatest="on" zPosition="2" />
+	<widget source="key_red" render="Label" position="150,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
+	<widget source="introduction" render="Label" position="20,470" size="740,30" zPosition="10" font="Bold;24" halign="center" transparent="1" />
+	<widget source="config" render="Listbox" position="20,70" size="740,375" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="1">
+      <convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (60,5),size = (720,28),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 2 is the Menu Titel
+						MultiContentEntryText(pos = (70,35),size = (710,20),font=1,flags = RT_HALIGN_LEFT,text = 2),# index 3 is the Description
+						MultiContentEntryPixmapAlphaTest(pos = (10,6),size = (48,48),png = 3),# index 4 is the pixmap
+					],
+				"fonts": [gFont("Regular",22),gFont("Regular",17)],
+				"itemHeight": 60
+				}
+				</convert>
+	</widget>
+</screen>
+<screen name="AutoMountEdit" title="MountEdit" position="center,77" size="1100,585">
+    <eLabel position="0,0" size="1100,2" backgroundColor="Grey" />
+	<eLabel position="20,55" size="740,2" backgroundColor="Grey" />
+	<eLabel position="780,0" size="2,518" backgroundColor="Grey" />
+	<eLabel position="0,518" size="1100,2" backgroundColor="Grey" />
+	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_red.png" position="150,525" size="200,60" alphatest="on" zPosition="2" />
+	<widget source="key_red" render="Label" position="150,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
+	<widget name="VKeyIcon" pixmap="skin_default/buttons/key_text.png" alphatest="on" zPosition="1" position="63,528" size="35,25" />
+	<widget name="config" position="20,70" size="740,375" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="1" />
+	<widget name="HelpWindow" position="484,494" size="1,1" zPosition="1" transparent="1" alphatest="on" />
+	<widget source="introduction" render="Label" position="20,470" size="740,30" zPosition="10" font="Bold;24" halign="center" transparent="1" />
+</screen>
+<screen name="NetworkBrowser" title="Network Neighbourhood" position="center,77" size="1100,585">
+    <eLabel position="0,0" size="1100,2" backgroundColor="Grey" />
+	<eLabel position="20,55" size="740,2" backgroundColor="Grey" />
+	<eLabel position="780,0" size="2,518" backgroundColor="Grey" />
+	<eLabel position="0,518" size="1100,2" backgroundColor="Grey" />
+	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_red.png" position="150,525" size="200,60" alphatest="on" zPosition="2" />
+	<widget source="key_red" render="Label" position="150,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
+	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_green.png" position="350,525" size="200,60" alphatest="on" zPosition="2" />
+	<widget source="key_green" render="Label" position="350,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
+	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" position="550,525" size="200,60" alphatest="on" zPosition="2" />
+	<widget source="key_yellow" render="Label" position="550,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
+	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_blue.png" position="750,525" size="200,60" alphatest="on" zPosition="2" />
+	<widget source="key_blue" render="Label" position="750,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />
+	<widget source="infotext" render="Label" position="20,470" size="740,30" zPosition="10" font="Bold;24" halign="center" transparent="1" />
+    <widget source="list" render="Listbox" position="20,70" size="740,375" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="1">
+      <convert type="TemplatedMultiContent">
+		{"template": [
+				MultiContentEntryPixmapAlphaTest(pos = (0,0),size = (48,48),png = 1),# index 1 is the expandable/expanded/verticalline icon
+				MultiContentEntryText(pos = (50,4),size = (470,26),font=2,flags = RT_HALIGN_LEFT,text = 2),# index 2 is the Hostname
+				MultiContentEntryText(pos = (140,5),size = (270,25),font=0,flags = RT_HALIGN_LEFT,text = 3),# index 3 is the sharename
+				MultiContentEntryText(pos = (140,26),size = (270,17),font=1,flags = RT_HALIGN_LEFT,text = 4),# index 4 is the sharedescription
+				MultiContentEntryPixmapAlphaTest(pos = (45,0),size = (48,48),png = 5),# index 5 is the nfs/cifs icon
+				MultiContentEntryPixmapAlphaTest(pos = (90,0),size = (48,48),png = 6),# index 6 is the isMounted icon
+			],
+		"fonts": [gFont("Regular",18),gFont("Regular",13),gFont("Regular",22)],
+		"itemHeight": 52
+		}
+	</convert>
+    </widget>
+</screen>
+<screen name="UserManager" title="UserManager" position="center,77" size="1100,585">
+    <eLabel position="0,0" size="1100,2" backgroundColor="Grey" />
+	<eLabel position="20,55" size="740,2" backgroundColor="Grey" />
+	<eLabel position="780,0" size="2,518" backgroundColor="Grey" />
+	<eLabel position="0,518" size="1100,2" backgroundColor="Grey" />
+	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_red.png" position="150,525" size="200,60" alphatest="on" zPosition="2" />
+	<widget source="key_red" render="Label" position="150,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
+	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" position="550,525" size="200,60" alphatest="on" zPosition="2" />
+	<widget source="key_yellow" render="Label" position="550,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
+	<widget source="introduction" render="Label" position="20,470" size="740,30" zPosition="10" font="Bold;24" halign="center" transparent="1" />
+    <widget source="config" render="Listbox" position="20,70" size="740,375" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="1">
+      <convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (80,4),size = (739,50),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
+						MultiContentEntryPixmapAlphaTest(pos = (10,6),size = (48,48),png = 3),# index 4 is the status pixmap
+					],
+				"fonts": [gFont("Regular",20)],
+				"itemHeight": 60
+				}
+      </convert>
+    </widget>
+</screen>
+<screen name="AutoMountView" title="MountView" position="center,77" size="1100,585">
+    <eLabel position="0,0" size="1100,2" backgroundColor="Grey" />
+	<eLabel position="20,55" size="740,2" backgroundColor="Grey" />
+	<eLabel position="780,0" size="2,518" backgroundColor="Grey" />
+	<eLabel position="0,518" size="1100,2" backgroundColor="Grey" />
+	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_red.png" position="150,525" size="200,60" alphatest="on" zPosition="2" />
+	<widget source="key_red" render="Label" position="150,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
+	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" position="550,525" size="200,60" alphatest="on" zPosition="2" />
+	<widget source="key_yellow" render="Label" position="550,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
+	<widget source="introduction" render="Label" position="20,470" size="740,30" zPosition="10" font="Bold;24" halign="center" transparent="1" />
+    <widget source="legend1" render="Label" position="20,4" size="175,50" transparent="1" zPosition="1" font="Regular;18" valign="center" halign="Left" />
+    <widget source="legend2" render="Label" position="195,4" size="390,50" transparent="1" zPosition="1" font="Regular;18" valign="center" halign="center" />
+    <widget source="legend3" render="Label" position="585,4" size="175,50" transparent="1" zPosition="1" font="Regular;18" valign="center" halign="center" />
+    <widget source="config" render="Listbox" position="20,70" size="740,375" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="1">
+      <convert type="TemplatedMultiContent">
+			{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (15,1),size = (48,48),png = 0),# index 0 is the isMounted pixmap
+					MultiContentEntryText(pos = (100,3),size = (290,25),font=0,flags = RT_HALIGN_LEFT,text = 1),# index 1 is the sharename
+					MultiContentEntryText(pos = (250,5),size = (370,17),font=1,flags = RT_HALIGN_LEFT,text = 2),# index 2 is the IPdescription
+					MultiContentEntryText(pos = (100,29),size = (620,17),font=1,flags = RT_HALIGN_LEFT,text = 3),# index 3 is the DIRdescription
+					MultiContentEntryPixmapAlphaTest(pos = (640,9),size = (48,48),png = 4),# index 4 is the activepng pixmap
+					MultiContentEntryPixmapAlphaTest(pos = (670,1),size = (48,48),png = 5),# index 4 is the mounttype pixmap
+				],
+				"fonts": [gFont("Regular",20),gFont("Regular",14)],
+				"itemHeight": 50
+			}
+	</convert>
+    </widget>
+</screen>
+<screen name="ScanIP" title="Scan IP" position="center,77" size="1100,585">
+    <eLabel position="0,0" size="1100,2" backgroundColor="Grey" />
+	<eLabel position="20,55" size="740,2" backgroundColor="Grey" />
+	<eLabel position="780,0" size="2,518" backgroundColor="Grey" />
+	<eLabel position="0,518" size="1100,2" backgroundColor="Grey" />
+	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_red.png" position="150,525" size="200,60" alphatest="on" zPosition="2" />
+	<widget source="key_red" render="Label" position="150,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
+	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_green.png" position="350,525" size="200,60" alphatest="on" zPosition="2" />
+	<widget source="key_green" render="Label" position="350,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
+	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" position="550,525" size="200,60" alphatest="on" zPosition="2" />
+	<widget source="key_yellow" render="Label" position="550,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
+    <widget name="config" position="20,70" size="740,375" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="1" />
+</screen>
   <screen name="MyTubePlayer" position="0,0" size="1280,720" title="InfoBar" backgroundColor="Transparent" flags="wfNoBorder">
     <ePixmap position="center,485" zPosition="-1" size="1280,295" pixmap="infinityHD-GOS/infobar_2.png" />
     <widget source="session.CurrentService" render="Label" position="300,560" size="700,32" font="Bold;30" halign="center" valign="top" noWrap="1" backgroundColor="Black" transparent="1">
