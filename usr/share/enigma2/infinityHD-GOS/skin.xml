@@ -1029,7 +1029,7 @@
     />
   </screen>
   <screen name="About" position="255,70" size="780,610" title="About">
-    <ePixmap position="90,30" size="600,210" pixmap="infinityHD-GOS/menu/infinityHD-logo.png" alphatest="blend" borderWidth="0" borderColor="Transparent" transparent="0" />
+    <ePixmap position="90,30" size="600,210" pixmap="infinityHD-GOS/menu/infinityHD-GOS-logo.png" alphatest="blend" borderWidth="0" borderColor="Transparent" transparent="0" />
     <widget source="EnigmaVersion" render="Label" position="13,233" size="750,25" font="Bold;22" halign="center" backgroundColor="BackTransparent" transparent="1" />
     <widget source="ImageVersion" render="Label" position="13,265" size="750,25" font="Bold;22" halign="center" backgroundColor="BackTransparent" transparent="1" />
     <widget source="TunerHeader" render="Label" position="13,305" size="750,25" font="Bold;24" halign="center" backgroundColor="BackTransparent" transparent="1" />
