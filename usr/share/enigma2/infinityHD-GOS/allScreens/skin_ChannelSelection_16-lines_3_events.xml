@@ -17,7 +17,7 @@
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Format:%H:%M</convert>
   </widget>
-  <widget source="ServiceEvent" render="Label" position="715,192" zPosition="1" size="524,431" font="ChSelDesc; 25" backgroundColor="BackTransparent" transparent="1" valign="top">
+  <widget source="ServiceEvent" render="Label" position="715,194" zPosition="1" size="524,370" font="ChSelDesc; 25" backgroundColor="BackTransparent" transparent="1" valign="top">
     <convert type="EventName">FullDescription</convert>
   </widget>
   <widget source="ServiceEvent" render="Progress" pixmap="/usr/local/share/enigma2/infinityHD-GOS/progressGOS2.png" position="819,166" zPosition="3" size="288,6" transparent="1">
@@ -32,8 +32,15 @@
   <widget position="200,640" size="160,36" name="key_green" font="Bold;19" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
   <widget position="360,640" size="160,36" name="key_yellow" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
   <widget position="520,640" size="160,36" name="key_blue" font="Bold;19" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />
-  <widget font="Regular;25" foregroundColor="secondFG" noWrap="1" position="715,640" render="NextEpgInfo" size="526,46" source="ServiceEvent" transparent="1" zPosition="2" />
-  <widget position="40,101" size="650,520" name="list" scrollbarMode="showNever" transparent="1" zPosition="2" serviceItemHeight="26" foregroundColorEvent="#b7a47e" foregroundColorEventSelected="CS_EventSelect" colorEventProgressbar="#b7a47e" colorEventProgressbarSelected="CS_ProgressSelect" colorEventProgressbarBorder="#b7a47e" colorEventProgressbarBorderSelected="CS_ProgressBorderSelect" foregroundColorServiceNotAvail="CS_ServiceNotAvail" foregroundColorMarked="CS_Marked" foregroundColorMarkedSelected="CS_MarkedSelect" backgroundColorMarked="CS_MarkedBack" backgroundColorMarkedSelected="CS_MarkedBackSelect" serviceNumberFont="Bold;28" serviceNameFont="Bold;28" serviceInfoFont="Regular;28" itemHeight="32" />
-  <eLabel position="715,635" size="525,1" backgroundColor="Stripe" zPosition="5" />
+  <widget source="ServiceEvent" render="Label" position="715,610" size="526,30" font="Regular; 22" zPosition="5" noWrap="1" transparent="1" foregroundColor="TextHighlight" backgroundColor="BackTransparent">
+      <convert type="inHDGOSNextEvents">Event2,noDuration</convert>
+    </widget>
+  <widget position="40,101" size="650,516" name="list" scrollbarMode="showNever" transparent="1" zPosition="2" serviceItemHeight="32" foregroundColorEvent="#b7a47e" foregroundColorEventSelected="CS_EventSelect" colorEventProgressbar="#b7a47e" colorEventProgressbarSelected="CS_ProgressSelect" colorEventProgressbarBorder="#b7a47e" colorEventProgressbarBorderSelected="CS_ProgressBorderSelect" foregroundColorServiceNotAvail="CS_ServiceNotAvail" foregroundColorMarked="CS_Marked" foregroundColorMarkedSelected="CS_MarkedSelect" backgroundColorMarked="CS_MarkedBack" backgroundColorMarkedSelected="CS_MarkedBackSelect" serviceNumberFont="Bold;28" serviceNameFont="Bold;28" serviceInfoFont="Regular;28" itemHeight="32" />
+  <eLabel position="715,570" size="525,1" backgroundColor="Stripe" zPosition="5" />
+<widget source="ServiceEvent" render="Label" position="715,577" size="526,30" font="Regular; 22" zPosition="5" noWrap="1" transparent="1" foregroundColor="TextHighlight" backgroundColor="BackTransparent">
+      <convert type="inHDGOSNextEvents">Event1,noDuration</convert>
+    </widget><widget source="ServiceEvent" render="Label" position="715,644" size="526,30" font="Regular; 22" zPosition="5" noWrap="1" transparent="1" foregroundColor="TextHighlight" backgroundColor="BackTransparent">
+      <convert type="inHDGOSNextEvents">Event3,noDuration</convert>
+    </widget>
 </screen>
 </skin>
