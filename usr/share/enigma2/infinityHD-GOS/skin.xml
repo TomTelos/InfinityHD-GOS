@@ -2799,7 +2799,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget position="240,655" size="195,46" source="key_red" render="Label" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
     <widget position="440,655" size="195,46" source="key_green" render="Label" font="Bold;19" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
     <widget position="640,655" size="195,46" name="key_yellow" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
-    <widget position="840,655" size="195,46" name="key_blue" font="Bold;19" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />
+    <widget position="840,655" size="195,46" source="key_blue" render="Label" font="Bold;19" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />
   <widget name="Picture" position="40,380" size="400,225" alphatest="on" />
   <widget source="menu" render="Listbox" position="461,85" size="779,540" scrollbarMode="showOnDemand">
 		<convert type="TemplatedMultiContent">
