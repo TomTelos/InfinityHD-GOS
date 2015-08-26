@@ -2798,7 +2798,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap position="840,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_blue.png" alphatest="on" zPosition="2" />
     <widget position="240,655" size="195,46" source="key_red" render="Label" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
     <widget position="440,655" size="195,46" source="key_green" render="Label" font="Bold;19" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
-    <widget position="640,655" size="195,46" name="key_yellow" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
+    <widget position="640,655" size="195,46" source="key_yellow" render="Label" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
     <widget position="840,655" size="195,46" source="key_blue" render="Label" font="Bold;19" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />
   <widget name="Picture" position="40,380" size="400,225" alphatest="on" />
   <widget source="menu" render="Listbox" position="461,85" size="779,540" scrollbarMode="showOnDemand">
@@ -2815,7 +2815,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
                         </convert>
   </widget>
 </screen>
-<screen name="EditScreens" position="0,0" size="1280,720" title="UserSkin EditScreens" flags="wfNoBorder">
+<screen name="UserSkinEditScreens" position="0,0" size="1280,720" title="UserSkin EditScreens" flags="wfNoBorder">
 	<widget source="global.CurrentTime" render="Label" position="1150,25" zPosition="0" size="90,35" font="Bold; 28" halign="right" backgroundColor="BackTransparent" transparent="1" foregroundColor="ClockCorner">
 		<convert type="ClockToText">Default</convert>
 	</widget>
@@ -2845,10 +2845,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap position="440,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_green.png" alphatest="on" zPosition="2" />
     <ePixmap position="640,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" alphatest="on" zPosition="2" />
     <ePixmap position="840,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_blue.png" alphatest="on" zPosition="2" />
-    <widget position="240,655" size="195,46" name="key_red" render="Label" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
-    <widget position="440,655" size="195,46" name="key_green" render="Label" font="Bold;19" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
-    <widget position="640,655" size="195,46" name="key_yellow" render="Label" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
-    <widget position="840,655" size="195,46" name="key_blue" render="Label" font="Bold;19" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />
+    <widget position="240,655" size="195,46" source="key_red" render="Label" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
+    <widget position="440,655" size="195,46" source="key_green" render="Label" font="Bold;19" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
+    <widget position="640,655" size="195,46" source="key_yellow" render="Label" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
+    <widget position="840,655" size="195,46" source="key_blue" render="Label" font="Bold;19" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />
 </screen>
 <screen name="ShootYourScreenConfig" position="center,center" size="650,420" title="ShootYourScreen" >
 	<widget name="config" position="10,10" size="630,350" scrollbarMode="showOnDemand" />
