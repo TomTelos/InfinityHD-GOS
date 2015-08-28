@@ -2,7 +2,7 @@
   <!-- infinityHD-GOS for Graterlia OS by TomTelos -->
   <!-- based on dreamTV-HD Skin by Kerni and infinityHD for newnigma -->
   <!-- this skin is continue of the inifinityHD-nBox by herpoi -->
-  <!-- version 2015-08-26 -->
+  <!-- version 2015-08-28 -->
   <output id="0">
     <resolution xres="1280" yres="720" bpp="32" />
   </output>
@@ -2815,7 +2815,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
                         </convert>
   </widget>
 </screen>
-<screen name="UserSkinEditScreens" position="0,0" size="1280,720" title="UserSkin EditScreens" flags="wfNoBorder">
+<screen name="EditScreens" position="0,0" size="1280,720" title="UserSkin EditScreens" flags="wfNoBorder">
 	<widget source="global.CurrentTime" render="Label" position="1150,25" zPosition="0" size="90,35" font="Bold; 28" halign="right" backgroundColor="BackTransparent" transparent="1" foregroundColor="ClockCorner">
 		<convert type="ClockToText">Default</convert>
 	</widget>
@@ -2825,15 +2825,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget font="Bold; 28" halign="left" position="40,25" render="Label" size="760,35" source="Title" transparent="1" zPosition="2" />
     <eLabel position="40,65" size="1200,2" backgroundColor="TextForeground" zPosition="2" />
     <eLabel position="450,85" size="1,555" backgroundColor="Stripe" zPosition="5" />
-    <!--widget source="session.VideoPicture" render="Pig" position="935,115" zPosition="3" size="284,160" backgroundColor="#ff000000">
-    </widget-->
+	<widget name="SkinPicture" position="40,1120" size="400,225" backgroundColor="#004e4e4e" />
     <widget source="menu" render="Listbox" position="461,85" size="779,555" scrollbarMode="showOnDemand" transparent="1">
       <convert type="TemplatedMultiContent">
                                 {"template":
                                         [
                                                 MultiContentEntryPixmapAlphaTest(pos = (2, 2), size = (54, 54), png = 3),
-                                                MultiContentEntryText(pos = (60, 2), size = (579, 22), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # name
-                                                MultiContentEntryText(pos = (55, 24),size = (579, 32), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # info
+                                                MultiContentEntryText(pos = (60, 2), size = (629, 22), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # name
+                                                MultiContentEntryText(pos = (55, 26),size = (629, 32), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # info
                                         ],
                                         "fonts": [gFont("Regular", 22),gFont("Regular", 16)],
                                         "itemHeight": 60
