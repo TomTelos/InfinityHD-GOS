@@ -4,6 +4,7 @@ Skórka infinityHD-GOS kompatybilna z image Graterlia i OpenPLi.
 
 ![Screenshot](https://raw.github.com/herpoi/infinityHD-nbox/master/Screenshots/Infobar_BP_Lite.jpg)
 ![Screenshot](https://raw.github.com/herpoi/infinityHD-nbox/master/Screenshots/Infobar_BP_Classic.jpg)
+![Screenshot](https://raw.github.com/herpoi/infinityHD-nbox/master/Screenshots/SecondInfoBar.png)
 ![Screenshot](https://raw.github.com/herpoi/infinityHD-nbox/master/Screenshots/ChannelSelection_BP_Right.jpg)
 ![Screenshot](https://raw.github.com/herpoi/infinityHD-nbox/master/Screenshots/EPGSelection_BP_Right.jpg)
 ![Screenshot](https://raw.github.com/herpoi/infinityHD-nbox/master/Screenshots/EventView_BP.jpg)
