@@ -2,7 +2,7 @@
   <!-- infinityHD-GOS for Graterlia OS by TomTelos -->
   <!-- based on dreamTV-HD Skin by Kerni and infinityHD for newnigma -->
   <!-- this skin is continue of the inifinityHD-nBox by herpoi -->
-  <!-- version 2015-08-28 -->
+  <!-- version 2015-08-31 -->
   <output id="0">
     <resolution xres="1280" yres="720" bpp="32" />
   </output>
@@ -511,25 +511,30 @@
     <widget source="help" render="Label" position="20,350" size="520,140" backgroundColor="background" transparent="1" font="Regular;20" />
     <widget name="config" position="20,50" size="520,290" scrollbarMode="showOnDemand" />
   </screen>
-  <screen name="EventView" position="0,0" size="1280,720" title="Eventview" flags="wfNoBorder">
-    <eLabel position="60,65" size="1177,2" backgroundColor="TextForeground" zPosition="2" />
-    <widget name="epg_description" position="63,130" size="1170,476" font="EvDesc; 28" backgroundColor="BackTransparent" foregroundColor="TextLightDimmed" transparent="1" valign="top" />
-    <widget name="duration" position="1123,80" size="110,35" zPosition="1" halign="right" font="Bold; 28" backgroundColor="BackTransparent" transparent="1" foregroundColor="TextHighlight" />
-    <ePixmap position="240,640" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_red.png" alphatest="on" zPosition="2" />
-    <ePixmap position="440,640" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_green.png" alphatest="on" zPosition="2" />
-    <ePixmap position="640,640" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" alphatest="on" zPosition="2" />
-    <ePixmap position="840,640" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_blue.png" alphatest="on" zPosition="2" />
-    <widget position="240,640" size="200,36" name="key_red" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
-    <widget position="440,640" size="200,36" name="key_green" font="Bold;19" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
-    <widget position="640,640" size="200,36" name="key_yellow" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
-    <widget position="840,640" size="200,36" name="key_blue" font="Bold;19" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />
-    <ePixmap position="1220,35" size="14,14" pixmap="infinityHD-GOS/icons/clock.png" alphatest="on" zPosition="2" />
-    <widget source="global.CurrentTime" render="Label" position="718,25" zPosition="0" size="493,35" font="Bold; 28" halign="right" transparent="1" backgroundColor="BackTransparent" foregroundColor="ClockCorner">
-      <convert type="inHDGOSClockToText">Format:%A - %d.%m.%Y - %H:%M</convert>
+<screen name="EventView" position="0,0" size="1280,720" title="Eventview" flags="wfNoBorder">
+  	<widget source="global.CurrentTime" render="Label" position="1150,25" zPosition="0" size="90,35" font="Bold; 28" halign="right" backgroundColor="BackTransparent" transparent="1" foregroundColor="ClockCorner">
+		<convert type="ClockToText">Default</convert>
+	</widget>
+    <widget source="global.CurrentTime" render="Label" position="800,25" zPosition="0" size="350,35" font="Bold; 28" halign="right" backgroundColor="BackTransparent" transparent="1" foregroundColor="KeyGreen">
+		<convert type="ClockToText">Format:%A %d.%m.%Y</convert>
     </widget>
-    <widget name="datetime" position="63,80" zPosition="1" size="450,35" font="Bold; 28" backgroundColor="BackTransparent" transparent="1" foregroundColor="TextHighlight" />
-    <widget name="channel" position="60,25" size="605,35" font="Bold; 28" halign="left" transparent="1" zPosition="2" />
-  </screen>
+    <widget font="Bold; 28" halign="left" position="40,25" render="Label" size="760,35" source="Title" transparent="1" zPosition="2" />
+    <eLabel position="40,65" size="1200,2" backgroundColor="TextForeground" zPosition="2" />
+    <ePixmap position="240,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_red.png" alphatest="on" zPosition="2" />
+    <ePixmap position="440,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_green.png" alphatest="on" zPosition="2" />
+    <ePixmap position="640,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" alphatest="on" zPosition="2" />
+    <ePixmap position="840,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_blue.png" alphatest="on" zPosition="2" />
+    <widget position="240,655" size="195,46" name="key_red" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
+    <widget position="440,655" size="195,46" name="key_green" font="Bold;19" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
+    <widget position="640,655" size="195,46" name="key_yellow" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
+    <widget position="840,655" size="195,46" name="key_blue" font="Bold;19" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />  
+    <widget name="epg_description" position="292,135" size="948,500" font="EvDesc; 28" backgroundColor="BackTransparent" foregroundColor="TextLightDimmed" transparent="1" valign="top" />
+    <widget name="duration" position="1130,85" size="110,35" zPosition="1" halign="right" font="Bold; 28" backgroundColor="BackTransparent" transparent="1" foregroundColor="TextHighlight" />
+    <widget name="datetime" position="292,85" zPosition="1" size="450,35" font="Bold; 28" backgroundColor="BackTransparent" transparent="1" foregroundColor="TextHighlight" />    
+    <widget alphatest="blend" position="40,85" render="Picon" size="220,132" source="Title" transparent="1" zPosition="1">
+      <convert type="inHDGOSRefString">CurrentRef</convert>
+    </widget>
+</screen>
   <screen name="NumberZap" position="440,242" size="400,135" flags="wfNoBorder">
     <widget name="number" position="96,13" size="200,60" font="Bold; 55" halign="center" valign="center" />
     <widget name="servicename" position="15,82" size="360,36" font="Bold; 31" valign="center" halign="center" foregroundColor="TextHighlight" />
@@ -1754,20 +1759,20 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="StringList" />
     </widget>
   </screen>
-<screen name="NumericalTextInputHelpDialog" position="484,494" zPosition="2" size="756,206" backgroundColor="Grey" flags="wfNoBorder">
-    <eLabel position="3,3" size="750,200" backgroundColor="TextDimmed" zPosition="-1" />
-    <widget name="key1" position="3,3" size="250,50" font="Console;22" halign="center" valign="center" />
-    <widget name="key2" position="253,3" size="250,50" font="Console;22" halign="center" valign="center" />
-    <widget name="key3" position="503,3" size="250,50" font="Console;22" halign="center" valign="center" />
-    <widget name="key4" position="3,53" size="250,50" font="Console;22" halign="center" valign="center" />
-    <widget name="key5" position="253,53" size="250,50" font="Console;22" halign="center" valign="center" />
-    <widget name="key6" position="503,53" size="250,50" font="Console;22" halign="center" valign="center" />
-    <widget name="key7" position="3,103" size="250,50" font="Console;22" halign="center" valign="center" />
-    <widget name="key8" position="253,103" size="250,50" font="Console;22" halign="center" valign="center" />
-    <widget name="key9" position="503,103" size="250,50" font="Console;22" halign="center" valign="center" />
-    <widget name="help1" position="3,153" size="250,50" font="Console;22" halign="center" valign="center" />
-    <widget name="key0" position="253,153" size="250,50" font="Console;22" halign="center" valign="center" />
-    <widget name="help2" position="503,153" size="250,50" font="Console;22" halign="center" valign="center" />
+<screen name="NumericalTextInputHelpDialog" position="262,522" zPosition="2" size="756,126" backgroundColor="Grey" flags="wfNoBorder">
+    <eLabel position="3,3" size="750,120" backgroundColor="TextDimmed" zPosition="-1" />
+    <widget name="key1" position="3,3" size="250,30" font="Console;22" halign="center" valign="center" />
+    <widget name="key2" position="253,3" size="250,30" font="Console;22" halign="center" valign="center" />
+    <widget name="key3" position="503,3" size="250,30" font="Console;22" halign="center" valign="center" />
+    <widget name="key4" position="3,33" size="250,30" font="Console;22" halign="center" valign="center" />
+    <widget name="key5" position="253,33" size="250,30" font="Console;22" halign="center" valign="center" />
+    <widget name="key6" position="503,33" size="250,30" font="Console;22" halign="center" valign="center" />
+    <widget name="key7" position="3,63" size="250,30" font="Console;22" halign="center" valign="center" />
+    <widget name="key8" position="253,63" size="250,30" font="Console;22" halign="center" valign="center" />
+    <widget name="key9" position="503,63" size="250,30" font="Console;22" halign="center" valign="center" />
+    <widget name="help1" position="3,93" size="250,30" font="Console;22" halign="center" valign="center" />
+    <widget name="key0" position="253,93" size="250,30" font="Console;22" halign="center" valign="center" />
+    <widget name="help2" position="503,93" size="250,30" font="Console;22" halign="center" valign="center" />
 </screen>
 <screen name="AdapterSetup" position="center,77" size="1100,585" title="Network Setup">
     <eLabel position="0,0" size="1100,2" backgroundColor="Grey" />
@@ -1789,7 +1794,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="DNS2text" render="Label" position="790,340" size="300,22" zPosition="1" font="Bold;20" halign="center" foregroundColor="BackTransparent" backgroundColor="Grey" />
     <widget source="DNS2" render="Label" position="790,370" size="300,22" zPosition="1" font="Bold;20" halign="center" />
     <eLabel position="0,518" size="1100,2" backgroundColor="Grey" />
-    <widget name="HelpWindow" position="484,494" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+    <widget name="HelpWindow" position="262,522" zPosition="1" size="1,1" transparent="1" alphatest="on" />
 	<widget name="VKeyIcon" pixmap="skin_default/buttons/key_text.png" alphatest="on" zPosition="1" position="63,528" size="35,25" />
 	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_red.png" position="150,525" size="200,60" alphatest="on" zPosition="2" />
 	<widget source="key_red" render="Label" position="150,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
@@ -1905,7 +1910,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_red.png" position="150,525" size="200,60" alphatest="on" zPosition="2" />
 	<widget source="key_red" render="Label" position="150,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
 	<widget name="VKeyIcon" pixmap="skin_default/buttons/key_text.png" alphatest="on" zPosition="1" position="63,528" size="35,25" />
-	<widget name="HelpWindow" position="484,494" size="1,1" zPosition="1" transparent="1" alphatest="on" />
+	<widget name="HelpWindow" position="262,522" size="1,1" zPosition="1" transparent="1" alphatest="on" />
 </screen>
 <screen name="AutoMountManager" title="MountManager" position="center,77" size="1100,585">
     <eLabel position="0,0" size="1100,2" backgroundColor="Grey" />
@@ -1937,7 +1942,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	<widget source="key_red" render="Label" position="150,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
 	<widget name="VKeyIcon" pixmap="skin_default/buttons/key_text.png" alphatest="on" zPosition="1" position="63,528" size="35,25" />
 	<widget name="config" position="20,70" size="740,375" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="1" />
-	<widget name="HelpWindow" position="484,494" size="1,1" zPosition="1" transparent="1" alphatest="on" />
+	<widget name="HelpWindow" position="262,522" size="1,1" zPosition="1" transparent="1" alphatest="on" />
 	<widget source="introduction" render="Label" position="20,470" size="740,30" zPosition="10" font="Bold;24" halign="center" transparent="1" />
 </screen>
 <screen name="NetworkBrowser" title="Network Neighbourhood" position="center,77" size="1100,585">
@@ -2098,7 +2103,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget position="440,625" size="200,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
     <widget position="640,625" size="200,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
     <widget position="840,625" size="200,36" name="ButtonBlue" pixmap="infinityHD-GOS/buttons/button_200x60_blue.png" alphatest="on" zPosition="3" />
-    <widget name="HelpWindow" position="265,490" size="1,1" zPosition="10" transparent="1" alphatest="on" />
+    <widget name="HelpWindow" position="262,522" size="1,1" zPosition="10" transparent="1" alphatest="on" />
     <widget name="thumbnail" position="0,0" size="100,75" alphatest="on" /> # fake entry for dynamic thumbnail resizing, currently there is no other way doing this.
   </screen>
   <screen name="MyTubeVideoHelpScreen" position="0,0" size="1280,720" title="MyTubePlayerHelpScreen..." flags="wfNoBorder">
@@ -2765,6 +2770,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget font="Bold; 28" halign="left" position="40,25" render="Label" size="760,35" source="Title" transparent="1" zPosition="2" />
     <eLabel position="40,65" size="1200,2" backgroundColor="TextForeground" zPosition="2" />
     <eLabel position="450,85" size="1,555" backgroundColor="Stripe" zPosition="5" />
+    <ePixmap pixmap="infinityHD-GOS/menu/userskin-logo.png" position="90,148" size="300,169" alphatest="blend" />
     <ePixmap position="240,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_red.png" alphatest="on" zPosition="2" />
     <ePixmap position="440,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_green.png" alphatest="on" zPosition="2" />
     <ePixmap position="640,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" alphatest="on" zPosition="2" />
@@ -2792,6 +2798,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget font="Bold; 28" halign="left" position="40,25" render="Label" size="760,35" source="Title" transparent="1" zPosition="2" />
     <eLabel position="40,65" size="1200,2" backgroundColor="TextForeground" zPosition="2" />
     <eLabel position="450,85" size="1,555" backgroundColor="Stripe" zPosition="5" />
+    <ePixmap pixmap="infinityHD-GOS/menu/userskin-logo.png" position="90,148" size="300,169" alphatest="blend" />
     <ePixmap position="240,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_red.png" alphatest="on" zPosition="2" />
     <ePixmap position="440,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_green.png" alphatest="on" zPosition="2" />
     <ePixmap position="640,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" alphatest="on" zPosition="2" />
@@ -2815,7 +2822,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
                         </convert>
   </widget>
 </screen>
-<screen name="EditScreens" position="0,0" size="1280,720" title="UserSkin EditScreens" flags="wfNoBorder">
+<screen name="UserSkinEditScreens" position="0,0" size="1280,720" title="UserSkin EditScreens" flags="wfNoBorder">
 	<widget source="global.CurrentTime" render="Label" position="1150,25" zPosition="0" size="90,35" font="Bold; 28" halign="right" backgroundColor="BackTransparent" transparent="1" foregroundColor="ClockCorner">
 		<convert type="ClockToText">Default</convert>
 	</widget>
@@ -2824,22 +2831,29 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     </widget>
     <widget font="Bold; 28" halign="left" position="40,25" render="Label" size="760,35" source="Title" transparent="1" zPosition="2" />
     <eLabel position="40,65" size="1200,2" backgroundColor="TextForeground" zPosition="2" />
-    <eLabel position="450,85" size="1,555" backgroundColor="Stripe" zPosition="5" />
-	<widget name="SkinPicture" position="40,1120" size="400,225" backgroundColor="#004e4e4e" />
-    <widget source="menu" render="Listbox" position="461,85" size="779,555" scrollbarMode="showOnDemand" transparent="1">
+    <eLabel position="512,541" size="729,1" backgroundColor="Stripe" zPosition="5" />
+    <eLabel position="40,541" size="450,1" backgroundColor="Stripe" zPosition="5" />
+    <eLabel position="40,244" size="450,1" backgroundColor="Stripe" zPosition="5" />
+    <eLabel position="500,85" size="1,555" backgroundColor="Stripe" zPosition="5" />
+    <eLabel position="345,85" size="1,150" backgroundColor="Stripe" zPosition="5" />
+    <widget source="menu" render="Listbox" position="512,85" size="729,449" scrollbarMode="showOnDemand" transparent="1">
       <convert type="TemplatedMultiContent">
                                 {"template":
                                         [
                                                 MultiContentEntryPixmapAlphaTest(pos = (2, 2), size = (54, 54), png = 3),
-                                                MultiContentEntryText(pos = (60, 2), size = (629, 22), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # name
-                                                MultiContentEntryText(pos = (55, 26),size = (629, 32), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # info
+                                                MultiContentEntryText(pos = (60, 2), size = (729, 24), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # name
+                                                MultiContentEntryText(pos = (100, 26),size = (679, 30), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # info
                                         ],
-                                        "fonts": [gFont("Regular", 22),gFont("Regular", 16)],
-                                        "itemHeight": 60
+                                        "fonts": [gFont("Regular", 22),gFont("Regular", 14)],
+                                        "itemHeight": 56
                                 }
                         </convert>
     </widget>
-    <widget name="Picture" position="40,380" size="400,225" alphatest="on" />
+    <widget name="SkinPicture" position="40,85" size="295,150" />
+    <widget name="widgetDetailsTXT" position="512,550" size="729,90" font="Regular;15" transparent="1" />
+    <widget name="PixMapPictureInScale" position="65,283" size="400,225" alphatest="on" />
+    <widget source="PreviewFont" render="Label" position="40,550" size="450,90" valign="center" font="Regular;20" transparent="1" foregroundColor="#00ffffff" halign="center" />
+    <widget name="PixMapPreview" position="355,85" size="135,150" alphatest="on" />
     <ePixmap position="240,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_red.png" alphatest="on" zPosition="2" />
     <ePixmap position="440,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_green.png" alphatest="on" zPosition="2" />
     <ePixmap position="640,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" alphatest="on" zPosition="2" />
@@ -2866,5 +2880,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget position="400,535" size="195,46" name="key_green" font="Bold;19" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
 	<widget name="list" position="0,10" size="400,500" scrollbarMode="showOnDemand" />
 	<widget name="choosen" position="400,0" size="400,500" scrollbarMode="showOnDemand" />
+</screen>
+<screen name="MovieBrowserConfiguration" position="center,80" size="800,600" title="Movie List Configuration" >
+	<widget name="config" position="10,10" size="780,505" itemHeight="24" font="Regular;20" transparent="1" scrollbarMode="showOnDemand" />
+    <ePixmap position="0,540" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_red.png" alphatest="on" zPosition="2" />
+    <ePixmap position="200,540" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_green.png" alphatest="on" zPosition="2" />
+    <ePixmap position="400,540" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" alphatest="on" zPosition="2" />
+    <ePixmap position="600,540" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_blue.png" alphatest="on" zPosition="2" />
+    <widget position="0,535" size="195,46" name="key_red" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
+    <widget position="200,535" size="195,46" name="key_green" font="Bold;19" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
+    <widget position="400,535" size="195,46" name="key_yellow" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
+    <widget position="600,535" size="195,46" name="key_blue" font="Bold;19" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />
 </screen>
 </skin>
