@@ -2,7 +2,7 @@
   <!-- infinityHD-GOS for Graterlia OS by TomTelos -->
   <!-- based on dreamTV-HD Skin by Kerni and infinityHD for newnigma -->
   <!-- this skin is continue of the inifinityHD-nBox by herpoi -->
-  <!-- version 2015-08-31 -->
+  <!-- version 2015-09-03 -->
   <output id="0">
     <resolution xres="1280" yres="720" bpp="32" />
   </output>
@@ -2850,10 +2850,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
                         </convert>
     </widget>
     <widget name="SkinPicture" position="40,85" size="295,150" />
-    <widget name="widgetDetailsTXT" position="512,550" size="729,90" font="Regular;15" transparent="1" />
-    <widget name="PixMapPictureInScale" position="65,283" size="400,225" alphatest="on" />
-    <widget source="PreviewFont" render="Label" position="40,550" size="450,90" valign="center" font="Regular;20" transparent="1" foregroundColor="#00ffffff" halign="center" />
+    <widget name="widgetDetailsTXT" position="512,550" size="729,90" font="Regular;15" transparent="1" />     
+    <widget name="PreviewFont" position="40,550" size="450,90" valign="center" font="Regular;20" transparent="1" foregroundColor="#00ffffff" halign="center" />
     <widget name="PixMapPreview" position="355,85" size="135,150" alphatest="on" />
+    <widget name="ScreenPixMapPictureInScale" position="53,280" zPosition="-5" size="415,233" alphatest="blend" />
+    <widget name="WigetPixMapPictureInScale" position="53,280" zPosition="1" size="415,233" alphatest="blend" />
+    <widget name="WigetPixMapPictureInScale1" position="53,280" zPosition="-1" size="1,1" alphatest="on" />
+    <widget name="WigetPixMapPictureInScale2" position="53,280" zPosition="-2" size="1,1" alphatest="on" />
     <ePixmap position="240,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_red.png" alphatest="on" zPosition="2" />
     <ePixmap position="440,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_green.png" alphatest="on" zPosition="2" />
     <ePixmap position="640,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" alphatest="on" zPosition="2" />
