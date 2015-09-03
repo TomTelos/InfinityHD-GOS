@@ -518,7 +518,7 @@
     <widget source="global.CurrentTime" render="Label" position="800,25" zPosition="0" size="350,35" font="Bold; 28" halign="right" backgroundColor="BackTransparent" transparent="1" foregroundColor="KeyGreen">
 		<convert type="ClockToText">Format:%A %d.%m.%Y</convert>
     </widget>
-    <widget font="Bold; 28" halign="left" position="40,25" render="Label" size="760,35" source="Title" transparent="1" zPosition="2" />
+    <widget font="Bold; 28" halign="left" position="40,25" size="760,35" name="channel" transparent="1" zPosition="2" />
     <eLabel position="40,65" size="1200,2" backgroundColor="TextForeground" zPosition="2" />
     <ePixmap position="240,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_red.png" alphatest="on" zPosition="2" />
     <ePixmap position="440,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_green.png" alphatest="on" zPosition="2" />
