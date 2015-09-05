@@ -2,7 +2,7 @@
   <!-- infinityHD-GOS for Graterlia OS by TomTelos -->
   <!-- based on dreamTV-HD Skin by Kerni and infinityHD for newnigma -->
   <!-- this skin is continue of the inifinityHD-nBox by herpoi -->
-  <!-- version 2015-09-03 -->
+  <!-- version 2015-09-05 -->
   <output id="0">
     <resolution xres="1280" yres="720" bpp="32" />
   </output>
@@ -1794,7 +1794,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="DNS2text" render="Label" position="790,340" size="300,22" zPosition="1" font="Bold;20" halign="center" foregroundColor="BackTransparent" backgroundColor="Grey" />
     <widget source="DNS2" render="Label" position="790,370" size="300,22" zPosition="1" font="Bold;20" halign="center" />
     <eLabel position="0,518" size="1100,2" backgroundColor="Grey" />
-    <widget name="HelpWindow" position="262,522" zPosition="1" size="1,1" transparent="1" alphatest="on" />
+    <widget name="HelpWindow" position="262,460" zPosition="1" size="1,1" transparent="1" alphatest="on" />
 	<widget name="VKeyIcon" pixmap="skin_default/buttons/key_text.png" alphatest="on" zPosition="1" position="63,528" size="35,25" />
 	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_red.png" position="150,525" size="200,60" alphatest="on" zPosition="2" />
 	<widget source="key_red" render="Label" position="150,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
@@ -1910,7 +1910,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	<ePixmap pixmap="infinityHD-GOS/buttons/button_200x60_red.png" position="150,525" size="200,60" alphatest="on" zPosition="2" />
 	<widget source="key_red" render="Label" position="150,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
 	<widget name="VKeyIcon" pixmap="skin_default/buttons/key_text.png" alphatest="on" zPosition="1" position="63,528" size="35,25" />
-	<widget name="HelpWindow" position="262,522" size="1,1" zPosition="1" transparent="1" alphatest="on" />
+	<widget name="HelpWindow" position="262,460" size="1,1" zPosition="1" transparent="1" alphatest="on" />
 </screen>
 <screen name="AutoMountManager" title="MountManager" position="center,77" size="1100,585">
     <eLabel position="0,0" size="1100,2" backgroundColor="Grey" />
@@ -1942,7 +1942,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	<widget source="key_red" render="Label" position="150,520" size="195,46" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
 	<widget name="VKeyIcon" pixmap="skin_default/buttons/key_text.png" alphatest="on" zPosition="1" position="63,528" size="35,25" />
 	<widget name="config" position="20,70" size="740,375" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="1" />
-	<widget name="HelpWindow" position="262,522" size="1,1" zPosition="1" transparent="1" alphatest="on" />
+	<widget name="HelpWindow" position="262,460" size="1,1" zPosition="1" transparent="1" alphatest="on" />
 	<widget source="introduction" render="Label" position="20,470" size="740,30" zPosition="10" font="Bold;24" halign="center" transparent="1" />
 </screen>
 <screen name="NetworkBrowser" title="Network Neighbourhood" position="center,77" size="1100,585">
