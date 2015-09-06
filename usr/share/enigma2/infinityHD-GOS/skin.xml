@@ -2,7 +2,7 @@
   <!-- infinityHD-GOS for Graterlia OS by TomTelos -->
   <!-- based on dreamTV-HD Skin by Kerni and infinityHD for newnigma -->
   <!-- this skin is continue of the inifinityHD-nBox by herpoi -->
-  <!-- version 2015-09-05 -->
+  <!-- version 2015-09-06 -->
   <output id="0">
     <resolution xres="1280" yres="720" bpp="32" />
   </output>
@@ -2831,30 +2831,29 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     </widget>
     <widget font="Bold; 28" halign="left" position="40,25" render="Label" size="760,35" source="Title" transparent="1" zPosition="2" />
     <eLabel position="40,65" size="1200,2" backgroundColor="TextForeground" zPosition="2" />
-    <eLabel position="512,541" size="729,1" backgroundColor="Stripe" zPosition="5" />
-    <eLabel position="40,541" size="450,1" backgroundColor="Stripe" zPosition="5" />
-    <eLabel position="40,244" size="450,1" backgroundColor="Stripe" zPosition="5" />
-    <eLabel position="500,85" size="1,555" backgroundColor="Stripe" zPosition="5" />
-    <eLabel position="345,85" size="1,150" backgroundColor="Stripe" zPosition="5" />
-    <widget source="menu" render="Listbox" position="512,85" size="729,449" scrollbarMode="showOnDemand" transparent="1">
+	<eLabel position="500,550" size="1,90" backgroundColor="Stripe" zPosition="5" />
+	<eLabel position="691,550" size="1,90" backgroundColor="Stripe" zPosition="5" />   
+    <eLabel position="40,541" size="1200,1" backgroundColor="Stripe" zPosition="5" />
+    <eLabel position="725,85" size="1,449" backgroundColor="Stripe" zPosition="5" />  
+    <widget source="menu" render="Listbox" position="740,85" size="504,449" scrollbarMode="showOnDemand" transparent="1">
       <convert type="TemplatedMultiContent">
                                 {"template":
                                         [
                                                 MultiContentEntryPixmapAlphaTest(pos = (2, 2), size = (54, 54), png = 3),
-                                                MultiContentEntryText(pos = (60, 2), size = (729, 24), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # name
-                                                MultiContentEntryText(pos = (100, 26),size = (679, 30), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # info
+                                                MultiContentEntryText(pos = (60, 2), size = (504, 24), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # name
+                                                MultiContentEntryText(pos = (65, 26),size = (454, 30), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # info
                                         ],
                                         "fonts": [gFont("Regular", 22),gFont("Regular", 14)],
                                         "itemHeight": 56
                                 }
                         </convert>
     </widget>
-    <widget name="SkinPicture" position="40,85" size="295,150" />
-    <widget name="widgetDetailsTXT" position="512,550" size="729,90" font="Regular;15" transparent="1" />     
-    <widget name="PreviewFont" position="40,550" size="450,90" valign="center" font="Regular;20" transparent="1" foregroundColor="#00ffffff" halign="center" />
-    <widget name="PixMapPreview" position="355,85" size="135,150" alphatest="on" />
-    <widget name="ScreenPixMapPictureInScale" position="53,280" zPosition="-5" size="415,233" alphatest="blend" />
-    <widget name="WigetPixMapPictureInScale" position="53,280" zPosition="1" size="415,233" alphatest="blend" />
+    <widget name="SkinPicture" position="511,550" size="170,90" />
+    <widget name="widgetDetailsTXT" position="701,550" size="543,90" font="Regular;15" transparent="1" />     
+    <widget name="PreviewFont" position="40,550" size="360,90" valign="center" font="Regular;20" transparent="1" foregroundColor="#00ffffff" halign="center" />
+    <widget name="PixMapPreview" position="400,550" size="90,90" alphatest="on" />
+  <widget name="ScreenPixMapPictureInScale" position="40,120" zPosition="-5" size="675,379" alphatest="blend" />  
+    <widget name="WigetPixMapPictureInScale" position="40,120" zPosition="1" size="675,379" alphatest="blend" />
     <widget name="WigetPixMapPictureInScale1" position="53,280" zPosition="-1" size="1,1" alphatest="on" />
     <widget name="WigetPixMapPictureInScale2" position="53,280" zPosition="-2" size="1,1" alphatest="on" />
     <ePixmap position="240,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_red.png" alphatest="on" zPosition="2" />

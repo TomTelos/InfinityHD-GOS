@@ -8,28 +8,28 @@
     <color name="TextLightDimmed" value="#00dcdcdc" />
     <color name="TextDimmed" value="#00bbbbbb" />
     <color name="ProgressbarFore" value="#000099ff" />
-    <color name="ProgressbarBack" value="#25E51400" />
+    <color name="ProgressbarBack" value="#25A4C400" />
 	<color name="ListSelectFore" value="#00ffffff" />
-    <color name="ListSelectBack" value="#25E51400" />
+    <color name="ListSelectBack" value="#25A4C400" />
     <color name="ListMarkFore" value="#00ff0000" />
-	<color name="ListMarkBack" value="#25E51400" />
+	<color name="ListMarkBack" value="#25A4C400" />
     <color name="ListMarkSelectFore" value="#00800000" />
-	<color name="ListMarkSelectBack" value="#25E51400" />
-    <color name="Stripe" value="#00E51400" />
+	<color name="ListMarkSelectBack" value="#25A4C400" />
+    <color name="Stripe" value="#00A4C400" />
     <color name="ClockCorner" value="#000099ff" />
     <color name="ClockInfobar" value="#00cccccc" />
 	<color name="BigDateInfobar" value="#00a5a5a5" />
-    <color name="CS_Event" value="#00E51400" />
+    <color name="CS_Event" value="#00A4C400" />
 	<color name="CS_EventSelect" value="#00ffffff" />
-	<color name="CS_Progress" value="#00E51400" />
+	<color name="CS_Progress" value="#00A4C400" />
 	<color name="CS_ProgressSelect" value="#00ffffff" />
-	<color name="CS_ProgressBorder" value="#00E51400" />
+	<color name="CS_ProgressBorder" value="#00A4C400" />
 	<color name="CS_ProgressBorderSelect" value="#00ffffff" />
 	<color name="CS_ServiceNotAvail" value="#003f3f3f" />
 	<color name="CS_Marked" value="#00ff0000" />
 	<color name="CS_MarkedSelect" value="#00f0b400" />
-	<color name="CS_MarkedBack" value="#25E51400" />
-	<color name="CS_MarkedBackSelect" value="#25E51400" />	
+	<color name="CS_MarkedBack" value="#25A4C400" />
+	<color name="CS_MarkedBackSelect" value="#25A4C400" />	
     <color name="Transparent" value="#ffffffff" />
     <color name="Black" value="#00000000" />
     <color name="Grey" value="#00999999" />

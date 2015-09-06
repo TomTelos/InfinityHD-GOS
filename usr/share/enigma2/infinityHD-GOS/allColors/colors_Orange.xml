@@ -8,34 +8,34 @@
     <color name="TextLightDimmed" value="#00dcdcdc" />
     <color name="TextDimmed" value="#00bbbbbb" />
     <color name="ProgressbarFore" value="#000099ff" />
-    <color name="ProgressbarBack" value="#256c0aab" />
+    <color name="ProgressbarBack" value="#25c3461b" />
 	<color name="ListSelectFore" value="#00ffffff" />
-    <color name="ListSelectBack" value="#256c0aab" />
+    <color name="ListSelectBack" value="#25c3461b" />
     <color name="ListMarkFore" value="#00ff0000" />
-	<color name="ListMarkBack" value="#256c0aab" />
+	<color name="ListMarkBack" value="#25c3461b" />
     <color name="ListMarkSelectFore" value="#00800000" />
-	<color name="ListMarkSelectBack" value="#256c0aab" />
-    <color name="Stripe" value="#006c0aab" />
+	<color name="ListMarkSelectBack" value="#25c3461b" />
+    <color name="Stripe" value="#00c3461b" />
     <color name="ClockCorner" value="#000099ff" />
     <color name="ClockInfobar" value="#00cccccc" />
 	<color name="BigDateInfobar" value="#00a5a5a5" />
-    <color name="CS_Event" value="#008C5DAA" />
-	<color name="CS_EventSelect" value="#009fd00b" />
-	<color name="CS_Progress" value="#000099ff" />
-	<color name="CS_ProgressSelect" value="#009fd00b" />
-	<color name="CS_ProgressBorder" value="#000099ff" />
-	<color name="CS_ProgressBorderSelect" value="#009fd00b" />
+    <color name="CS_Event" value="#00c3461b" />
+	<color name="CS_EventSelect" value="#00ffffff" />
+	<color name="CS_Progress" value="#00c3461b" />
+	<color name="CS_ProgressSelect" value="#00ffffff" />
+	<color name="CS_ProgressBorder" value="#00c3461b" />
+	<color name="CS_ProgressBorderSelect" value="#00ffffff" />
 	<color name="CS_ServiceNotAvail" value="#003f3f3f" />
 	<color name="CS_Marked" value="#00ff0000" />
 	<color name="CS_MarkedSelect" value="#00f0b400" />
-	<color name="CS_MarkedBack" value="#256c0aab" />
-	<color name="CS_MarkedBackSelect" value="#256c0aab" />	
+	<color name="CS_MarkedBack" value="#25c3461b" />
+	<color name="CS_MarkedBackSelect" value="#25c3461b" />	
     <color name="Transparent" value="#ffffffff" />
     <color name="Black" value="#00000000" />
     <color name="Grey" value="#00999999" />
-    <color name="DarkGrey" value="#00666666" />
+    <color name="DarkGrey" value="#00666666" />	
     <color name="KeyRed" value="#00ff2525" />
-    <color name="KeyRedBack" value="#006c0aab" />
+    <color name="KeyRedBack" value="#009f1313" />
     <color name="KeyYellow" value="#00bab329" />
     <color name="KeyYellowBack" value="#00a08500" />
     <color name="KeyGreen" value="#00389416" />
