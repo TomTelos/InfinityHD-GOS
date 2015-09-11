@@ -1,5 +1,5 @@
 <skin>
-	<screen name="MoviePlayer" position="0,4" size="1280,720" title="InfoBar" backgroundColor="Transparent" flags="wfNoBorder" zPosition="-2">
+	<screen name="MoviePlayer" position="0,4" size="1280,720" title="InfoBar" backgroundColor="Transparent" flags="wfNoBorder">
     <widget source="global.CurrentTime" render="Label" position="1080,605" size="145,40" font="Bold; 33" valign="bottom" halign="right" backgroundColor="Black" transparent="1" foregroundColor="ClockCorner">
 	  <convert type="ClockToText">Format:%H:%M</convert>
 	</widget>
@@ -13,11 +13,9 @@
     <widget source="session.CurrentService" render="Label" position="1115,645" size="110,35" font="Regular; 28" halign="right" valign="bottom" backgroundColor="BackTransparent" transparent="1">
       <convert type="ServicePosition">Length,ShowHours</convert>
     </widget>
-    <!-- Picon /-->
     <widget source="session.CurrentService" render="Picon" position="53,568" size="220,132" zPosition="4" alphatest="blend" transparent="1">
       <convert type="inHDGOSMovieReference">Reference</convert>
 	</widget>
-		<!-- Progressbar /-->
 		<eLabel name="ProgressbarBack" position="300,661" size="690,1" backgroundColor="ProgressbarBack" zPosition="3" />
 		<widget source="session.CurrentService" render="Progress" position="300,660" size="690,3" zPosition="4" pixmap="infinityHD-GOS/progressGOS.png" transparent="1">
 		<convert type="ServicePosition">Position</convert>
