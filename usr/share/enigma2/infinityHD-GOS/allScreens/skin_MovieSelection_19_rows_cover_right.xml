@@ -17,19 +17,19 @@
     <widget position="440,655" size="195,46" name="key_green" font="Bold;19" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
     <widget position="640,655" size="195,46" name="key_yellow" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
     <widget position="840,655" size="195,46" name="key_blue" font="Bold;19" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />    
-	<widget position="603,85" size="637,510" itemHeights="97,67,27" fontSizesOriginal="23,18,18" fontSizesCompact="23,18" fontSizesMinimal="23,18" name="list" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
+	<widget position="603,85" size="637,515" itemHeights="97,67,27" fontSizesOriginal="23,18,18" fontSizesCompact="23,18" fontSizesMinimal="23,18" name="list" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
 	<widget position="40,125" size="220,30" source="Service" render="Label" transparent="1" zPosition="3" font="Bold; 26" halign="center" foregroundColor="KeyGreen">
 		<convert type="ServiceTime">Duration</convert>
 		<convert type="ClockToText">AsLengthSeconds</convert>
 	</widget>
-	<eLabel position="603,604" size="637,1" backgroundColor="Stripe" zPosition="2" />
+	<eLabel position="603,609" size="637,1" backgroundColor="Stripe" zPosition="2" />
 	<widget position="270,125" size="312,515" source="Service" render="Label" valign="top" transparent="1" zPosition="3" font="MovDesc; 24" foregroundColor="TextLightDimmed">
 		<convert type="EventName">FullDescription</convert>
 	</widget>
-	<widget position="603,614" size="185,26" source="Service" render="Label" transparent="1" zPosition="3" font="Bold; 24" halign="left" foregroundColor="TextHighlight">
+	<widget position="603,619" size="185,26" source="Service" render="Label" transparent="1" zPosition="3" font="Bold; 24" halign="left" foregroundColor="TextHighlight">
 		<convert type="MovieInfo">FileSize</convert>
 	</widget>
-	<widget position="788,614" size="453,26" name="freeDiskSpace" font="Bold; 24" halign="right" backgroundColor="BackTransparent" transparent="1" zPosition="3" />
+	<widget position="788,619" size="453,26" name="freeDiskSpace" font="Bold; 24" halign="right" backgroundColor="BackTransparent" transparent="1" zPosition="3" />
 <widget source="Service" render="inHDGOSCover" position="40,307" size="220,315" zPosition="4" transparent="1" alphatest="blend" />
 	
 	<widget source="Service" render="Picon" position="40,165" zPosition="4" size="220,132" transparent="1" alphatest="blend">
