@@ -3,10 +3,11 @@
     <font filename="Aller_Rg.ttf" name="Regular" scale="100" />
     <font filename="Aller_Bd.ttf" name="Bold" scale="100" />
     <font filename="DroidSansMono.ttf" name="Console" scale="100" />
-    <font filename="Aller_It.ttf" name="ChSelDesc" scale="95" />
-    <font filename="Aller_It.ttf" name="EPGSelDesc" scale="95" />
-    <font filename="Aller_It.ttf" name="EvDesc" scale="95" />
-    <font filename="Aller_It.ttf" name="GraphDesc" scale="95" />
-    <font filename="Aller_It.ttf" name="SIDesc" scale="95" />
+    <font filename="Aller_It.ttf" name="ChSelDesc" scale="90" />
+    <font filename="Aller_It.ttf" name="EPGSelDesc" scale="90" />
+    <font filename="Aller_It.ttf" name="EvDesc" scale="90" />
+    <font filename="Aller_It.ttf" name="GraphDesc" scale="90" />
+    <font filename="Aller_It.ttf" name="SIDesc" scale="90" />
+	<font filename="Aller_It.ttf" name="MovDesc" scale="90" />
   </fonts>
 </skin>

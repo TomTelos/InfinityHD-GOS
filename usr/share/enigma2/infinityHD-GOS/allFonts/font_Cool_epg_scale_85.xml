@@ -8,5 +8,6 @@
     <font filename="cool.ttf" name="EvDesc" scale="85" />
     <font filename="cool.ttf" name="GraphDesc" scale="85" />
     <font filename="cool.ttf" name="SIDesc" scale="85" />
+	<font filename="cool.ttf" name="MovDesc" scale="85" />
   </fonts>
 </skin>

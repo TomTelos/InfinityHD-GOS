@@ -8,5 +8,6 @@
     <font filename="Aller_Rg.ttf" name="EvDesc" scale="120" />
     <font filename="Aller_Rg.ttf" name="GraphDesc" scale="120" />
     <font filename="Aller_Rg.ttf" name="SIDesc" scale="120" />
+	<font filename="Aller_Rg.ttf" name="MovDesc" scale="120" />
   </fonts>
 </skin>

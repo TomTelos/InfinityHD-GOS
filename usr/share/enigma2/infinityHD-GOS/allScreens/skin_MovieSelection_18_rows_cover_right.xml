@@ -21,7 +21,7 @@
 		<convert type="ClockToText">AsLengthSeconds</convert>
 	</widget>
 	<eLabel position="60,584" size="600,2" backgroundColor="Stripe" zPosition="2" />
-	<widget position="680,125" size="325,497" source="Service" render="Label" valign="top" transparent="1" zPosition="3" font="Regular; 20" foregroundColor="TextLightDimmed">
+	<widget position="680,125" size="325,497" source="Service" render="Label" valign="top" transparent="1" zPosition="3" font="MovDesc; 24" foregroundColor="TextLightDimmed">
 		<convert type="EventName">FullDescription</convert>
 	</widget>
 	<widget position="60,595" size="185,26" source="Service" render="Label" transparent="1" zPosition="3" font="Bold; 24" halign="left" foregroundColor="TextHighlight">

@@ -8,5 +8,6 @@
     <font filename="Ubuntu-R.ttf" name="EvDesc" scale="95" />
     <font filename="Ubuntu-R.ttf" name="GraphDesc" scale="95" />
     <font filename="Ubuntu-R.ttf" name="SIDesc" scale="95" />
+	<font filename="Ubuntu-R.ttf" name="MovDesc" scale="95" />
   </fonts>
 </skin>

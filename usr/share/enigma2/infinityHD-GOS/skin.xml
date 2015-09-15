@@ -2,7 +2,7 @@
   <!-- infinityHD-GOS for Graterlia OS by TomTelos -->
   <!-- based on dreamTV-HD Skin by Kerni and infinityHD for newnigma -->
   <!-- this skin is continue of the inifinityHD-nBox by herpoi -->
-  <!-- version 2015-09-11 -->
+  <!-- version 2015-09-15 -->
   <output id="0">
     <resolution xres="1280" yres="720" bpp="32" />
   </output>
@@ -98,6 +98,7 @@
     <font filename="Aller_Rg.ttf" name="EvDesc" scale="100" />
     <font filename="Aller_Rg.ttf" name="GraphDesc" scale="100" />
     <font filename="Aller_Rg.ttf" name="SIDesc" scale="100" />
+    <font filename="Aller_Rg.ttf" name="MovDesc" scale="100" />
   </fonts>
   <subtitles>
     <sub name="Subtitle_TTX" font="Bold;30" shadowColor="#40101010" shadowOffset="3,3" />
@@ -628,40 +629,43 @@
 	</widget>
 	<eLabel name="Label" position="1108,647" size="15,35" font="Regular; 28" text="/" halign="center" valign="bottom" />
 </screen>
-  <screen name="MovieSelection" position="0,0" size="1280,720" flags="wfNoBorder" title="Select a movie">
-  <widget font="Bold; 28" position="60,25" size="605,35" render="Label" source="Title" transparent="1" valign="center" zPosition="2" />
-  <eLabel position="60,65" size="1177,2" backgroundColor="TextForeground" zPosition="2" />
-  <ePixmap position="1220,35" size="14,14" pixmap="infinityHD-GOS/icons/clock.png" alphatest="on" zPosition="2" />
-  <widget source="global.CurrentTime" render="Label" position="718,25" zPosition="0" size="493,35" font="Bold; 28" halign="right" transparent="1" backgroundColor="BackTransparent" foregroundColor="ClockCorner">
-    <convert type="inHDGOSClockToText">Format:%A - %d.%m.%Y - %H:%M</convert>
-  </widget>
-  <widget position="60,84" size="600,525" itemHeights="105,75,35" fontSizesOriginal="25,20,20" fontSizesCompact="25,20" fontSizesMinimal="25,20" name="list" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
-  <ePixmap position="240,640" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_red.png" alphatest="on" zPosition="2" />
-  <ePixmap position="440,640" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_green.png" alphatest="on" zPosition="2" />
-  <ePixmap position="640,640" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" alphatest="on" zPosition="2" />
-  <ePixmap position="840,640" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_blue.png" alphatest="on" zPosition="2" />
-  <widget position="240,640" size="200,36" name="key_red" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
-  <widget position="440,640" size="200,36" name="key_green" font="Bold;19" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
-  <widget position="640,640" size="200,36" name="key_yellow" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
-  <widget position="840,640" size="200,36" name="key_blue" font="Bold;19" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />
-  <widget position="1066,185" size="171,30" source="Service" render="Label" transparent="1" zPosition="3" font="Bold; 26" halign="right" foregroundColor="TextHighlight">
-    <convert type="ServiceTime">Duration</convert>
-    <convert type="ClockToText">AsLengthSeconds</convert>
-  </widget>
-  <eLabel position="680,225" size="557,2" backgroundColor="Stripe" zPosition="2" />
-  <widget position="680,237" size="557,319" source="Service" render="Label" valign="top" transparent="1" zPosition="3" font="Regular; 24" foregroundColor="TextLightDimmed">
-    <convert type="EventName">ExtendedDescription</convert>
-  </widget>
-  <widget position="1053,562" size="185,30" source="Service" render="Label" transparent="1" zPosition="3" font="Bold; 26" halign="right" foregroundColor="TextHighlight">
-    <convert type="MovieInfo">FileSize</convert>
-  </widget>
-  <widget position="817,600" size="420,26" name="freeDiskSpace" font="Bold; 24" halign="right" backgroundColor="BackTransparent" transparent="1" zPosition="3" />
-  <widget source="Service" render="Picon" position="695,81" zPosition="4" size="220,132" transparent="1" alphatest="blend">
-    <convert type="inHDGOSMovieReference" />
-  </widget>
-<widget position="932,85" size="305,94" source="Service" render="Label" transparent="1" zPosition="3" font="Bold; 26" halign="left" foregroundColor="TextHighlight" valign="top">
-  <convert type="EventName">Name</convert>
-</widget>
+<screen name="MovieSelection" position="0,0" size="1280,720" flags="wfNoBorder" title="Select a movie">
+	<widget source="global.CurrentTime" render="Label" position="1150,25" zPosition="0" size="90,35" font="Bold; 28" halign="right" backgroundColor="BackTransparent" transparent="1" foregroundColor="ClockCorner">
+		<convert type="ClockToText">Default</convert>
+	</widget>
+    <widget source="global.CurrentTime" render="Label" position="800,25" zPosition="0" size="350,35" font="Bold; 28" halign="right" backgroundColor="BackTransparent" transparent="1" foregroundColor="KeyGreen">
+		<convert type="ClockToText">Format:%A %d.%m.%Y</convert>
+    </widget>
+    <widget font="Bold; 28" halign="left" position="40,25" render="Label" size="760,35" source="Title" transparent="1" zPosition="2" />
+    <eLabel position="40,65" size="1200,2" backgroundColor="TextForeground" zPosition="2" />
+	<eLabel position="592,85" size="1,555" backgroundColor="Stripe" zPosition="5" halign="center" />
+    <ePixmap position="240,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_red.png" alphatest="on" zPosition="2" />
+    <ePixmap position="440,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_green.png" alphatest="on" zPosition="2" />
+    <ePixmap position="640,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" alphatest="on" zPosition="2" />
+    <ePixmap position="840,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_blue.png" alphatest="on" zPosition="2" />
+    <widget position="240,655" size="195,46" name="key_red" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
+    <widget position="440,655" size="195,46" name="key_green" font="Bold;19" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
+    <widget position="640,655" size="195,46" name="key_yellow" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
+    <widget position="840,655" size="195,46" name="key_blue" font="Bold;19" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />    
+	<widget position="603,85" size="637,510" itemHeights="100,70,30" fontSizesOriginal="24,18,18" fontSizesCompact="24,18" fontSizesMinimal="24,18" name="list" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
+	<widget position="411,190" size="171,30" source="Service" render="Label" transparent="1" zPosition="3" font="Bold; 26" halign="right" foregroundColor="KeyGreen">
+		<convert type="ServiceTime">Duration</convert>
+		<convert type="ClockToText">AsLengthSeconds</convert>
+	</widget>
+	<eLabel position="603,604" size="637,1" backgroundColor="Stripe" zPosition="2" />
+	<widget position="40,230" size="542,410" source="Service" render="Label" valign="top" transparent="1" zPosition="3" font="MovDesc; 24" foregroundColor="TextLightDimmed">
+		<convert type="EventName">FullDescription</convert>
+	</widget>
+	<widget position="603,614" size="185,26" source="Service" render="Label" transparent="1" zPosition="3" font="Bold; 24" halign="left" foregroundColor="TextHighlight">
+		<convert type="MovieInfo">FileSize</convert>
+	</widget>
+	<widget position="788,614" size="453,26" name="freeDiskSpace" font="Bold; 24" halign="right" backgroundColor="BackTransparent" transparent="1" zPosition="3" />
+	<widget source="Service" render="Picon" position="40,85" zPosition="4" size="220,132" transparent="1" alphatest="blend">
+		<convert type="inHDGOSMovieReference" />
+	</widget>
+	<widget position="278,85" size="305,94" source="Service" render="Label" transparent="1" zPosition="3" font="Bold; 26" halign="left" foregroundColor="TextHighlight" valign="top">
+		<convert type="EventName">Name</convert>
+	</widget>
 </screen>
 <screen name="Mute" zPosition="1" position="0,0" size="130,100" title="Mute" backgroundColor="BackTransparent" flags="wfNoBorder">
   <ePixmap position="0,0" size="130,100" pixmap="infinityHD-GOS/volume/mute50.png" alphatest="blend" transparent="1" />
