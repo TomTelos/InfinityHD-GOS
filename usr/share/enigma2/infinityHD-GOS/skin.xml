@@ -2,7 +2,7 @@
   <!-- infinityHD-GOS for Graterlia OS by TomTelos -->
   <!-- based on dreamTV-HD Skin by Kerni and infinityHD for newnigma -->
   <!-- this skin is continue of the inifinityHD-nBox by herpoi -->
-  <!-- version 2015-10-14 -->
+  <!-- version 2015-10-18 -->
   <output id="0">
     <resolution xres="1280" yres="720" bpp="32" />
   </output>
@@ -2963,10 +2963,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="Is_HD_Icon" position="935,95" size="60,60" zPosition="1" alphatest="blend" />
     <widget name="IsMultichannel_Icon" position="1000,95" size="60,60" zPosition="1" alphatest="blend" />
     <!-- SubTiles -->
-    <widget name="fpSRT_1" position="0,540" size="1920,220" valign="center" halign="center" font="Regular;24" backgroundColor="background" shadowColor="Black" shadowOffset="-3,-2" transparent="1" />
-    <widget name="fpSRT_2" position="0,540" size="1920,220" valign="center" halign="center" font="Regular;24" backgroundColor="background" shadowColor="Black" shadowOffset="-3,-2" transparent="1" />
-    <widget name="fpSRT_3" position="0,540" size="1920,220" valign="center" halign="center" font="Regular;24" backgroundColor="background" shadowColor="Black" shadowOffset="-3,-2" transparent="1" />
-    <widget name="fpSRT_4" position="0,540" size="1920,220" valign="center" halign="center" font="Regular;24" backgroundColor="background" shadowColor="Black" shadowOffset="-3,-2" transparent="1" />
+    <widget name="fpSRT_1" position="0,540" size="1920,220" valign="center" halign="center" font="Regular;24" backgroundColor="background" shadowColor="black" shadowOffset="-3,-2" transparent="1" />
+    <widget name="fpSRT_2" position="0,540" size="1920,220" valign="center" halign="center" font="Regular;24" backgroundColor="background" shadowColor="black" shadowOffset="-3,-2" transparent="1" />
+    <widget name="fpSRT_3" position="0,540" size="1920,220" valign="center" halign="center" font="Regular;24" backgroundColor="background" shadowColor="black" shadowOffset="-3,-2" transparent="1" />
+    <widget name="fpSRT_4" position="0,540" size="1920,220" valign="center" halign="center" font="Regular;24" backgroundColor="background" shadowColor="black" shadowOffset="-3,-2" transparent="1" />
+
+    <!--widget name="fpSRT_bg" position="0,540" size="1920,220" valign="center" halign="center" backgroundColor="transpBlack" zPosition="1"/-->
+    
+    <widget name="afpSubtitles" position="0,0" size="1,1" valign="center" halign="center" font="Regular;60" backgroundColor="black" transparent="0" />
 </screen>
 <screen name="AdvancedFreePlayerStart" position="0,0" size="1280,720" title="" flags="wfNoBorder">
 	<widget source="global.CurrentTime" render="Label" position="1150,25" zPosition="0" size="90,35" font="Bold; 28" halign="right" backgroundColor="BackTransparent" transparent="1" foregroundColor="ClockCorner">
