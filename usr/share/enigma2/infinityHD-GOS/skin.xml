@@ -2944,33 +2944,62 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget position="400,535" size="195,46" name="key_yellow" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
     <widget position="600,535" size="195,46" name="key_blue" font="Bold;19" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />
 </screen>
-<screen name="AdvancedFreePlayer" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder">
-    <!-- OSD -->
-    <widget name="InfoBarBG" position="215,30" zPosition="-5" size="851,134" transparent="0" pixmap="infinityHD-GOS/infobar_2up145.png" /> 
-    <widget source="session.CurrentService" render="Label" position="225,40" size="841,45" font="Regular;24" valign="center" noWrap="1" foregroundColor="TextHighlight" backgroundColor="BackTransparent" transparent="1">
+<screen name="AdvancedFreePlayerInfobar" position="0,0" size="1280,720" title="InfoBar" backgroundColor="Transparent" flags="wfNoBorder">
+    <eLabel position="899,21" size="321,66" backgroundColor="BackTransparent" zPosition="-1" />
+    <widget source="global.CurrentTime" render="Label" position="1010,21" size="200,70" font="Bold; 55" valign="top" halign="right" backgroundColor="Black" transparent="1" foregroundColor="ClockInfobar">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="844,30" size="210,26" font="Bold; 21" halign="right" backgroundColor="Black" transparent="1" valign="top" foregroundColor="BigDateInfobar">
+      <convert type="inHDGOSClockToText">Format:%A</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="844,53" size="210,26" font="Bold; 21" halign="right" backgroundColor="Black" transparent="1" valign="top" foregroundColor="BigDateInfobar">
+      <convert type="inHDGOSClockToText">Format:%d %B</convert>
+    </widget>
+    <ePixmap position="0,559" zPosition="-3" size="1280,720" pixmap="infinityHD-GOS/infobar_2.png" />
+    <widget source="session.CurrentService" render="Label" position="300,605" size="692,40" font="Bold; 33" halign="left" valign="bottom" noWrap="1" backgroundColor="Black" transparent="1" foregroundColor="TextHighlight">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget name="progressBar" position="225,86" size="841,3" zPosition="4" pixmap="infinityHD-GOS/progressGOS.png" transparent="1" />
-    <widget name="currTimeLabel" position="245,110" size="110,30" valign="left" halign="center" font="Regular; 26" shadowColor="Black" shadowOffset="-3,-3" transparent="1" />
-    <widget name="lengthTimeLabel" position="375,110" size="110,30" valign="left" halign="center" font="Regular; 26" shadowColor="Black" shadowOffset="-3,-3" transparent="1" />
-    <widget name="remainedLabel" position="485,110" size="110,30" valign="left" halign="center" font="Regular; 26" shadowColor="Black" shadowOffset="-3,-3" transparent="1" foregroundColor="KeyGreen" />
-    <!-- SIZE of the VIDEO -->
-    <widget source="static_VideoWidth" render="Label" font="Regular; 26" position="660,110" size="80,30" halign="right" foregroundColor="TextHighlight2" backgroundColor="KeyBlueBack" transparent="1" />
-    <widget source="static_x" render="Label" font="Regular; 20" position="740,110" size="30,30" halign="center" valign="center" foregroundColor="TextHighlight2" backgroundColor="KeyBlueBack" transparent="1" />
-    <widget source="static_VideoHeight" render="Label" font="Regular; 26" position="770,110" size="80,30" halign="left" foregroundColor="TextHighlight2" backgroundColor="KeyBlueBack" transparent="1" />
-    <!-- ICONS -->
-    <widget name="IsWidescreen_Icon" position="870,95" size="60,60" zPosition="1" alphatest="blend" />
-    <widget name="Is_HD_Icon" position="935,95" size="60,60" zPosition="1" alphatest="blend" />
-    <widget name="IsMultichannel_Icon" position="1000,95" size="60,60" zPosition="1" alphatest="blend" />
-    <!-- SubTiles -->
-    <widget name="fpSRT_1" position="0,540" size="1920,220" valign="center" halign="center" font="Regular;24" backgroundColor="background" shadowColor="black" shadowOffset="-3,-2" transparent="1" />
-    <widget name="fpSRT_2" position="0,540" size="1920,220" valign="center" halign="center" font="Regular;24" backgroundColor="background" shadowColor="black" shadowOffset="-3,-2" transparent="1" />
-    <widget name="fpSRT_3" position="0,540" size="1920,220" valign="center" halign="center" font="Regular;24" backgroundColor="background" shadowColor="black" shadowOffset="-3,-2" transparent="1" />
-    <widget name="fpSRT_4" position="0,540" size="1920,220" valign="center" halign="center" font="Regular;24" backgroundColor="background" shadowColor="black" shadowOffset="-3,-2" transparent="1" />
-
-    <!--widget name="fpSRT_bg" position="0,540" size="1920,220" valign="center" halign="center" backgroundColor="transpBlack" zPosition="1"/-->
-    
-    <widget name="afpSubtitles" position="0,0" size="1,1" valign="center" halign="center" font="Regular;60" backgroundColor="black" transparent="0" />
+    <widget source="session.CurrentService" render="Label" position="986,645" size="120,35" font="Regular; 28" halign="right" valign="bottom" backgroundColor="BackTransparent" shadowColor="Black" shadowOffset="-1,-1" transparent="1">
+      <convert type="ServicePosition">Position,ShowHours</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="1115,645" size="110,35" font="Regular; 28" halign="right" valign="bottom" backgroundColor="BackTransparent" transparent="1">
+      <convert type="ServicePosition">Length,ShowHours</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Picon" position="53,568" size="220,132" zPosition="4" alphatest="blend" transparent="1">
+      <convert type="inHDGOSMovieReference">Reference</convert>
+	</widget>
+	<widget source="session.RecordState" render="Pixmap" pixmap="infinityHD-GOS/icons/i_rec_kl.png" position="1030,605" zPosition="3" size="36,36" alphatest="on">
+		<convert type="ConditionalShowHide">Blink</convert>
+	</widget>
+	<ePixmap pixmap="infinityHD-GOS/icons/i_dolby_no_kl.png" position="1070,605" size="36,36" zPosition="1" alphatest="on" />
+	<widget source="session.CurrentService" render="Pixmap" pixmap="infinityHD-GOS/icons/i_dolby_kl.png" position="1070,605" size="36,36" zPosition="2" alphatest="on">
+		<convert type="ServiceInfo">IsMultichannel</convert>
+		<convert type="ConditionalShowHide" />
+	</widget>
+	<ePixmap pixmap="infinityHD-GOS/icons/i_sd_kl.png" position="1110,605" size="36,36" zPosition="1" alphatest="on" />
+	<widget source="session.CurrentService" render="Pixmap" pixmap="infinityHD-GOS/icons/i_hd_kl.png" position="1110,605" size="36,36" zPosition="2" alphatest="on">
+		<convert type="ServiceInfo">VideoWidth</convert>
+		<convert type="ValueRange">800,2000</convert>
+		<convert type="ConditionalShowHide" />
+	</widget>
+	<ePixmap pixmap="infinityHD-GOS/icons/i_format_no_kl.png" position="1150,605" size="36,36" zPosition="1" alphatest="on" />
+	<widget source="session.CurrentService" render="Pixmap" pixmap="infinityHD-GOS/icons/i_format_kl.png" position="1150,605" size="36,36" zPosition="2" alphatest="on">
+		<convert type="ServiceInfo">IsWidescreen</convert>
+		<convert type="ConditionalShowHide" />
+	</widget>
+	<ePixmap pixmap="infinityHD-GOS/icons/i_sub_no_kl.png" position="1190,605" size="36,36" zPosition="1" alphatest="on" />
+	<widget source="session.CurrentService" render="Pixmap" pixmap="infinityHD-GOS/icons/i_sub_kl.png" position="1190,605" size="36,36" zPosition="2" alphatest="on">
+		<convert type="ServiceInfo">SubtitlesAvailable</convert>
+		<convert type="ConditionalShowHide" />
+	</widget>
+		<eLabel name="ProgressbarBack" position="300,661" size="690,1" backgroundColor="ProgressbarBack" zPosition="3" />
+		<widget source="session.CurrentService" render="Progress" position="300,660" size="690,3" zPosition="4" pixmap="infinityHD-GOS/progressGOS.png" transparent="1">
+		<convert type="ServicePosition">Position</convert>
+	</widget>
+		<widget source="session.CurrentService" render="PositionGauge" position="300,657" size="690,9" zPosition="5" transparent="1">
+		<convert type="ServicePosition">Gauge</convert>
+	</widget>
+	<eLabel name="Label" position="1108,647" size="15,35" font="Regular; 28" text="/" halign="center" valign="bottom" />
 </screen>
 <screen name="AdvancedFreePlayerStart" position="0,0" size="1280,720" title="" flags="wfNoBorder">
 	<widget source="global.CurrentTime" render="Label" position="1150,25" zPosition="0" size="90,35" font="Bold; 28" halign="right" backgroundColor="BackTransparent" transparent="1" foregroundColor="ClockCorner">
