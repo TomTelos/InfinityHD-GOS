@@ -2,7 +2,7 @@
   <!-- infinityHD-GOS for Graterlia OS by TomTelos -->
   <!-- based on dreamTV-HD Skin by Kerni and infinityHD for newnigma -->
   <!-- this skin is continue of the inifinityHD-nBox by herpoi -->
-  <!-- version 2015-10-29 -->
+  <!-- version 2015-11-10 -->
   <output id="0">
     <resolution xres="1280" yres="720" bpp="32" />
   </output>
@@ -3041,5 +3041,29 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget position="0,535" size="195,46" name="key_red" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
     <widget position="200,535" size="195,46" name="key_green" font="Bold;19" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
     <widget position="600,535" size="195,46" name="key_blue" font="Bold;19" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />
+</screen>
+<screen name="freeIPTVwidget" position="40,80" size="1200,600" title="freeIPTV">
+	<ePixmap position="200,545" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_red.png" alphatest="on" zPosition="2" />
+    <ePixmap position="400,545" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_green.png" alphatest="on" zPosition="2" />
+    <ePixmap position="600,545" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" alphatest="on" zPosition="2" />
+    <ePixmap position="800,545" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_blue.png" alphatest="on" zPosition="2" />
+    <widget position="200,540" size="195,46" render="Label" source="key_red" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
+    <widget position="400,540" size="195,46" render="Label" source="key_green" font="Bold;19" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
+    <widget position="600,540" size="195,46" render="Label" source="key_yellow" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
+    <widget position="800,540" size="195,46" render="Label" source="key_blue" font="Bold;19" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />
+    <widget name="headertext" position="5,7" zPosition="1" size="1190,23" font="Regular;20" foregroundColor="TextHighlight" transparent="1" backgroundColor="Black" />
+    <widget name="statustext" position="480,180" zPosition="1" size="537,90" font="Regular;20" halign="center" valign="center" transparent="1" backgroundColor="Black" />
+    <widget name="list" position="301,50" zPosition="2" size="894,350" scrollbarMode="showOnDemand" transparent="1" backgroundColor="Black" />
+    <widget name="console" position="6,430" zPosition="1" size="1190,100" font="Regular;20" transparent="1" backgroundColor="Black" />
+    <widget name="cover" zPosition="2" position="6,50" size="265,350" alphatest="blend" borderWidth="2" borderColor="TextForeground" backgroundColor="Black" />
+    <widget name="playerlogo" zPosition="4" position="1075,0" size="120,40" alphatest="blend" />
+    <widget name="sequencer" position="0,0" zPosition="6" size="1200,600" font="Regular;160" halign="center" valign="center" transparent="1" backgroundColor="Black" />
+    <widget name="spinner" zPosition="2" position="716,240" size="16,16" transparent="1" alphatest="blend" />
+    <widget name="spinner_1" zPosition="1" position="716,240" size="16,16" transparent="1" alphatest="blend" />
+    <widget name="spinner_2" zPosition="1" position="732,240" size="16,16" transparent="1" alphatest="blend" />
+    <widget name="spinner_3" zPosition="1" position="748,240" size="16,16" transparent="1" alphatest="blend" />
+    <widget name="spinner_4" zPosition="1" position="764,240" size="16,16" transparent="1" alphatest="blend" />
+    <eLabel position="6,415" size="1190,2" backgroundColor="Stripe" />
+    <eLabel position="286,50" size="2,350" backgroundColor="Stripe" />
 </screen>
 </skin>
