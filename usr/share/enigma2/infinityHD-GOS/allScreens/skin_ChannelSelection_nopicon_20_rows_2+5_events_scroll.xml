@@ -21,7 +21,7 @@
     <widget position="440,655" size="195,46" name="key_green" font="Bold;19" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
     <widget position="640,655" size="195,46" name="key_yellow" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
     <widget position="840,655" size="195,46" name="key_blue" font="Bold;19" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />  
-    <widget source="ServiceEvent" render="Label" position="40,85" zPosition="1" size="75,30" font="Bold; 24" backgroundColor="BackTransparent" transparent="1" halign="center">
+    <widget source="ServiceEvent" render="Label" position="40,85" zPosition="1" size="75,30" font="Bold; 24" backgroundColor="BackTransparent" transparent="1" halign="left">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>  
@@ -32,7 +32,7 @@
     <widget source="Event" render="Label" position="115,85" zPosition="1" size="403,30" font="Bold; 24" valign="center" foregroundColor="TextHighlight" backgroundColor="BackTransparent" transparent="1" noWrap="1">
       <convert type="EventName">Name</convert>
     </widget>
-	<widget source="ServiceEvent" render="Label" position="40,300" zPosition="1" size="75,30" font="Bold; 24" halign="center" backgroundColor="BackTransparent" transparent="1">
+	<widget source="ServiceEvent" render="Label" position="40,300" zPosition="1" size="75,30" font="Bold; 24" halign="left" backgroundColor="BackTransparent" transparent="1">
 		<convert type="inHDGOSg16ServiceNameEventNobile">StartTime</convert>
 	</widget>
 	<widget source="ServiceEvent" render="Label" position="115,300" zPosition="1" size="403,30" font="Bold; 24" halign="left" backgroundColor="BackTransparent" transparent="1" foregroundColor="TextHighlight" valign="center">
