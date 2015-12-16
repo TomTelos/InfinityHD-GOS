@@ -2,7 +2,7 @@
   <!-- infinityHD-GOS for Graterlia OS by TomTelos -->
   <!-- based on dreamTV-HD Skin by Kerni and infinityHD for newnigma -->
   <!-- this skin is continue of the inifinityHD-nBox by herpoi -->
-  <!-- version 2015-11-18 -->
+  <!-- version 2015-12-16 -->
   <output id="0">
     <resolution xres="1280" yres="720" bpp="32" />
   </output>
@@ -3043,28 +3043,100 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget position="200,535" size="195,46" name="key_green" font="Bold;19" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
     <widget position="600,535" size="195,46" name="key_blue" font="Bold;19" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />
 </screen>
-<screen name="freeIPTVwidget" position="40,80" size="1200,600" title="freeIPTV">
-	<ePixmap position="200,545" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_red.png" alphatest="on" zPosition="2" />
-    <ePixmap position="400,545" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_green.png" alphatest="on" zPosition="2" />
-    <ePixmap position="600,545" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" alphatest="on" zPosition="2" />
-    <ePixmap position="800,545" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_blue.png" alphatest="on" zPosition="2" />
-    <widget position="200,540" size="195,46" render="Label" source="key_red" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
-    <widget position="400,540" size="195,46" render="Label" source="key_green" font="Bold;19" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
-    <widget position="600,540" size="195,46" render="Label" source="key_yellow" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
-    <widget position="800,540" size="195,46" render="Label" source="key_blue" font="Bold;19" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />
-    <widget name="headertext" position="5,7" zPosition="1" size="1190,23" font="Regular;20" foregroundColor="TextHighlight" transparent="1" backgroundColor="Black" />
-    <widget name="statustext" position="480,180" zPosition="1" size="537,90" font="Regular;20" halign="center" valign="center" transparent="1" backgroundColor="Black" />
-    <widget name="list" position="301,50" zPosition="2" size="894,350" scrollbarMode="showOnDemand" transparent="1" backgroundColor="Black" />
-    <widget name="console" position="6,430" zPosition="1" size="1190,100" font="Regular;20" transparent="1" backgroundColor="Black" />
-    <widget name="cover" zPosition="2" position="6,50" size="265,350" alphatest="blend" borderWidth="2" borderColor="TextForeground" backgroundColor="Black" />
-    <widget name="playerlogo" zPosition="4" position="1075,0" size="120,40" alphatest="blend" />
-    <widget name="sequencer" position="0,0" zPosition="6" size="1200,600" font="Regular;160" halign="center" valign="center" transparent="1" backgroundColor="Black" />
-    <widget name="spinner" zPosition="2" position="716,240" size="16,16" transparent="1" alphatest="blend" />
-    <widget name="spinner_1" zPosition="1" position="716,240" size="16,16" transparent="1" alphatest="blend" />
-    <widget name="spinner_2" zPosition="1" position="732,240" size="16,16" transparent="1" alphatest="blend" />
-    <widget name="spinner_3" zPosition="1" position="748,240" size="16,16" transparent="1" alphatest="blend" />
-    <widget name="spinner_4" zPosition="1" position="764,240" size="16,16" transparent="1" alphatest="blend" />
-    <eLabel position="6,415" size="1190,2" backgroundColor="Stripe" />
-    <eLabel position="286,50" size="2,350" backgroundColor="Stripe" />
+<screen name="j00zekHostTreeSelector" position="0,0" size="1280,720" title=" " flags="wfNoBorder">
+	<widget name="myPath" position="610,85" size="630,25" font="Regular;20" transparent="1" />
+	<widget name="filelist" position="40,85" size="549,550" zPosition="1" font="Regular;20" transparent="1" scrollbarMode="showOnDemand" />
+	<widget name="Cover" position="610,110" size="630,530" alphatest="blend" />
+	<widget source="global.CurrentTime" render="Label" position="1150,25" zPosition="0" size="90,35" font="Bold; 28" halign="right" backgroundColor="BackTransparent" transparent="1" foregroundColor="ClockCorner">
+		<convert type="ClockToText">Default</convert>
+	</widget>
+    <widget source="global.CurrentTime" render="Label" position="800,25" zPosition="0" size="350,35" font="Bold; 28" halign="right" backgroundColor="BackTransparent" transparent="1" foregroundColor="KeyGreen">
+		<convert type="ClockToText">Format:%A %d.%m.%Y</convert>
+    </widget>
+    <widget name="info" font="Bold; 28" halign="left" position="40,25" render="Label" size="760,35" transparent="1" zPosition="2" />
+    <eLabel position="40,65" size="1200,2" backgroundColor="TextForeground" zPosition="2" />
+    <eLabel position="599,85" size="1,555" backgroundColor="Stripe" zPosition="5" />
+    <ePixmap position="240,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_red.png" alphatest="on" zPosition="2" />
+    <ePixmap position="440,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_green.png" alphatest="on" zPosition="2" />
+    <ePixmap position="640,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" alphatest="on" zPosition="2" />
+    <ePixmap position="840,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_blue.png" alphatest="on" zPosition="2" />
+    <widget position="240,655" size="195,46" render="Label" source="key_red" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
+    <widget position="440,655" size="195,46" render="Label" source="key_green" font="Bold;19" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
+    <widget position="640,655" size="195,46" render="Label" source="key_yellow" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
+    <widget position="840,655" size="195,46" render="Label" source="key_blue" font="Bold;19" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />
+</screen>
+<screen name="IPTVPlayerWidget" position="0,0" size="1280,720" title="IPTV Player" flags="wfNoBorder">
+	<widget source="global.CurrentTime" render="Label" position="1150,25" zPosition="0" size="90,35" font="Bold; 28" halign="right" backgroundColor="BackTransparent" transparent="1" foregroundColor="ClockCorner">
+		<convert type="ClockToText">Default</convert>
+	</widget>
+    <widget source="global.CurrentTime" render="Label" position="800,25" zPosition="0" size="350,35" font="Bold; 28" halign="right" backgroundColor="BackTransparent" transparent="1" foregroundColor="KeyGreen">
+		<convert type="ClockToText">Format:%A %d.%m.%Y</convert>
+    </widget>
+    <widget font="Bold; 28" halign="left" position="40,25" render="Label" size="760,35" source="Title" transparent="1" zPosition="2" />
+    <eLabel position="40,65" size="1200,2" backgroundColor="TextForeground" zPosition="2" />  
+    <ePixmap position="240,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_red.png" alphatest="on" zPosition="2" />
+    <ePixmap position="440,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_green.png" alphatest="on" zPosition="2" />
+    <ePixmap position="640,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" alphatest="on" zPosition="2" />
+    <ePixmap position="840,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_blue.png" alphatest="on" zPosition="2" />
+    <widget position="240,655" size="195,46" render="Label" source="key_red" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
+    <widget position="440,655" size="195,46" render="Label" source="key_green" font="Bold;19" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
+    <widget position="640,655" size="195,46" render="Label" source="key_yellow" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
+    <widget position="840,655" size="195,46" render="Label" source="key_blue" font="Bold;19" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />
+    <widget name="headertext" position="40,85" zPosition="1" size="1080,23" font="Regular;20" foregroundColor="TextHighlight" transparent="1" backgroundColor="Black" />
+    <widget name="statustext" position="514,250" zPosition="1" size="537,90" font="Regular;20" halign="center" valign="center" transparent="1" backgroundColor="Black" />
+    <widget name="list" position="326,125" zPosition="2" size="914,350" scrollbarMode="showOnDemand" transparent="1" backgroundColor="Black" />
+    <widget name="console" position="40,496" zPosition="1" size="1200,145" font="Regular;20" transparent="1" backgroundColor="Black" />
+    <widget name="cover" zPosition="2" position="40,125" size="265,350" alphatest="blend" borderWidth="2" borderColor="TextForeground" backgroundColor="Black" />
+    <widget name="playerlogo" zPosition="4" position="1120,75" size="120,40" alphatest="blend" />
+    <widget name="sequencer" position="1,0" zPosition="6" size="1280,720" font="Regular;160" halign="center" valign="center" transparent="1" backgroundColor="Black" />
+    <widget name="spinner" zPosition="2" position="750,310" size="16,16" transparent="1" alphatest="blend" />
+    <widget name="spinner_1" zPosition="1" position="750,310" size="16,16" transparent="1" alphatest="blend" />
+    <widget name="spinner_2" zPosition="1" position="766,310" size="16,16" transparent="1" alphatest="blend" />
+    <widget name="spinner_3" zPosition="1" position="782,310" size="16,16" transparent="1" alphatest="blend" />
+    <widget name="spinner_4" zPosition="1" position="798,310" size="16,16" transparent="1" alphatest="blend" />
+    <eLabel position="40,485" size="1200,1" backgroundColor="Stripe" />
+    <eLabel position="315,125" size="1,350" backgroundColor="Stripe" />
+</screen>
+<screen name="ConfigMenu" position="center,80" size="800,600" title="">
+	<widget name="config" position="10,10" size="780,500" zPosition="1" transparent="1" scrollbarMode="showOnDemand" />
+    <ePixmap position="0,540" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_red.png" alphatest="on" zPosition="2" />
+    <ePixmap position="200,540" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_green.png" alphatest="on" zPosition="2" />
+    <ePixmap position="400,540" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" alphatest="on" zPosition="2" />
+    <ePixmap position="600,540" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_blue.png" alphatest="on" zPosition="2" />
+    <widget position="0,535" size="195,46" name="key_red" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
+    <widget position="200,535" size="195,46" name="key_green" font="Bold;19" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
+    <widget position="400,535" size="195,46" name="key_yellow" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
+    <widget position="600,535" size="195,46" name="key_blue" font="Bold;19" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />
+</screen>
+<screen name="IPTVConfigBaseWidget" position="center,80" size="800,600" title="">
+  <widget name="config" position="10,10" size="780,505" zPosition="1" transparent="1" scrollbarMode="showOnDemand" />
+    <ePixmap position="0,540" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_red.png" alphatest="on" zPosition="2" />
+    <ePixmap position="200,540" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_green.png" alphatest="on" zPosition="2" />
+    <ePixmap position="400,540" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" alphatest="on" zPosition="2" />
+    <ePixmap position="600,540" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_blue.png" alphatest="on" zPosition="2" />
+    <widget position="0,535" size="195,46" name="key_red" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
+    <widget position="200,535" size="195,46" name="key_green" font="Bold;19" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
+    <widget position="400,535" size="195,46" name="key_yellow" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
+    <widget position="600,535" size="195,46" name="key_blue" font="Bold;19" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />
+</screen>
+<screen name="IPTVDMWidget" position="0,0" title="IPTV Player download manager" size="1280,720">        
+    <widget name="list" position="40,118" zPosition="2" size="1200,520" scrollbarMode="showOnDemand" transparent="0" enableWrapAround="1" />
+    <widget name="titel" position="40,85" zPosition="1" size="1200,23" font="Regular;20" transparent="1" foregroundColor="TextHighlight" />
+	<widget source="global.CurrentTime" render="Label" position="1150,25" zPosition="0" size="90,35" font="Bold; 28" halign="right" backgroundColor="BackTransparent" transparent="1" foregroundColor="ClockCorner">
+		<convert type="ClockToText">Default</convert>
+	</widget>
+    <widget source="global.CurrentTime" render="Label" position="800,25" zPosition="0" size="350,35" font="Bold; 28" halign="right" backgroundColor="BackTransparent" transparent="1" foregroundColor="KeyGreen">
+		<convert type="ClockToText">Format:%A %d.%m.%Y</convert>
+    </widget>
+    <widget font="Bold; 28" halign="left" position="40,25" render="Label" size="760,35" source="Title" transparent="1" zPosition="2" />
+    <eLabel position="40,65" size="1200,2" backgroundColor="TextForeground" zPosition="2" />
+    <ePixmap position="240,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_red.png" alphatest="on" zPosition="2" />
+    <ePixmap position="440,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_green.png" alphatest="on" zPosition="2" />
+    <ePixmap position="640,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" alphatest="on" zPosition="2" />
+    <ePixmap position="840,660" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_blue.png" alphatest="on" zPosition="2" />
+    <widget position="240,655" size="195,46" render="Label" source="key_red" font="Bold;19" halign="center" valign="center" backgroundColor="KeyRedBack" transparent="1" zPosition="3" />
+    <widget position="440,655" size="195,46" render="Label" source="key_green" font="Bold;19" halign="center" valign="center" backgroundColor="KeyGreenBack" transparent="1" zPosition="3" />
+    <widget position="640,655" size="195,46" render="Label" source="key_yellow" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
+    <widget position="840,655" size="195,46" render="Label" source="key_blue" font="Bold;19" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />
 </screen>
 </skin>
