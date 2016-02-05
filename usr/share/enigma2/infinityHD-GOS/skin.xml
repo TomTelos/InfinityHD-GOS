@@ -2,7 +2,7 @@
   <!-- infinityHD-GOS for Graterlia OS by TomTelos -->
   <!-- based on dreamTV-HD Skin by Kerni and infinityHD for newnigma -->
   <!-- this skin is continue of the inifinityHD-nBox by herpoi -->
-  <!-- version 2015-12-16 -->
+  <!-- version 2016-02-05 -->
   <output id="0">
     <resolution xres="1280" yres="720" bpp="32" />
   </output>
@@ -2839,7 +2839,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <eLabel text="http://forum.xunil.pl" position="0,90" size="400,30" font="Regular;24" halign="center" />
     <widget name="skininfo" position="0,120" size="400,25" font="Regular;20" halign="center" />
 </screen>
-<screen name="UserSkinScreens" position="0,0" size="1280,720" title="UserSkin Setup" flags="wfNoBorder">
+<screen name="TreeUserSkinScreens" position="0,0" size="1280,720" title="UserSkin Setup" flags="wfNoBorder">
 	<widget source="global.CurrentTime" render="Label" position="1150,25" zPosition="0" size="90,35" font="Bold; 28" halign="right" backgroundColor="BackTransparent" transparent="1" foregroundColor="ClockCorner">
 		<convert type="ClockToText">Default</convert>
 	</widget>
@@ -2859,19 +2859,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget position="640,655" size="195,46" source="key_yellow" render="Label" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
     <widget position="840,655" size="195,46" source="key_blue" render="Label" font="Bold;19" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />
 	<widget name="PreviewPicture" position="40,380" size="400,225" alphatest="on" />
-	<widget source="menu" render="Listbox" position="461,85" size="779,540" scrollbarMode="showOnDemand">
-		<convert type="TemplatedMultiContent">
-                                {"template":
-                                        [
-                                                MultiContentEntryPixmapAlphaTest(pos = (2, 2), size = (54, 54), png = 3),
-                                                MultiContentEntryText(pos = (60, 2), size = (679, 22), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # name
-                                                MultiContentEntryText(pos = (55, 24),size = (679, 32), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # info
-                                        ],
-                                        "fonts": [gFont("Regular", 22),gFont("Regular", 16)],
-                                        "itemHeight": 60
-                                }
-                        </convert>
-	</widget>
+	<widget name="filelist" position="461,85" size="779,540" zPosition="1" font="Regular;20" transparent="1" scrollbarMode="showOnDemand" />
 </screen>
 <screen name="UserSkinEditScreens" position="0,0" size="1280,720" title="UserSkin EditScreens" flags="wfNoBorder">
 	<widget source="global.CurrentTime" render="Label" position="1150,25" zPosition="0" size="90,35" font="Bold; 28" halign="right" backgroundColor="BackTransparent" transparent="1" foregroundColor="ClockCorner">
