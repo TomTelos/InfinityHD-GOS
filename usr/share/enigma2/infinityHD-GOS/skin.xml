@@ -2,7 +2,7 @@
   <!-- infinityHD-GOS for Graterlia OS by TomTelos -->
   <!-- based on dreamTV-HD Skin by Kerni and infinityHD for newnigma -->
   <!-- this skin is continue of the inifinityHD-nBox by herpoi -->
-  <!-- version 2016-02-07 -->
+  <!-- version 2016-03-07 -->
   <output id="0">
     <resolution xres="1280" yres="720" bpp="32" />
   </output>
@@ -239,7 +239,7 @@
       <convert type="inHDGOSDMCHDCaidDisplay">Default</convert>
     </widget>
   </screen>
-<screen flags="wfNoBorder" name="SecondInfoBar" position="center,center" size="1280,720" title="InfoBar">
+<screen flags="wfNoBorder" name="SecondInfoBar" position="center,0" size="1280,720" title="InfoBar">
 	<widget source="global.CurrentTime" render="Label" position="1150,25" zPosition="0" size="90,35" font="Bold; 28" halign="right" backgroundColor="BackTransparent" transparent="1" foregroundColor="ClockCorner">
 		<convert type="ClockToText">Default</convert>
 	</widget>
@@ -392,6 +392,24 @@
       <convert type="inHDGOSDMCHDCaidDisplay">Default</convert>
     </widget>
 	<eLabel text="Caid:" position="315,674" size="50,22" font="Bold; 18" valign="center" backgroundColor="BackTransparent" foregroundColor="TextDimmed" transparent="1" />
+</screen>
+ <screen backgroundColor="Transparent" flags="wfNoBorder" name="SecondInfoBarSimple" position="center,0" size="1280,720" title="Second InfoBar">
+    <ePixmap position="0,465" zPosition="-1" size="1280,295" pixmap="infinityHD-GOS/infobar_2.png" />
+    <widget position="152,510" size="472,28" source="session.Event_Now" render="Label" font="Bold; 24" valign="bottom" noWrap="1" backgroundColor="BackTransparent" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" foregroundColor="TextHighlight">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget position="787,510" size="427,28" source="session.Event_Next" render="Label" font="Bold; 24" valign="bottom" noWrap="1" backgroundColor="BackTransparent" foregroundColor="TextHighlight2" transparent="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <eLabel position="center,515" size="2,175" backgroundColor="Stripe" />
+    <eLabel position="67,510" size="130,28" font="Bold; 24" halign="left" foregroundColor="TextHighlight" backgroundColor="BackTransparent" transparent="1" valign="bottom" text="Now:" />
+    <widget source="session.Event_Now" render="Label" position="67,544" size="557,153" font="SIDesc; 22" zPosition="1" backgroundColor="BackTransparent" transparent="1" foregroundColor="TextLightDimmed" valign="top">
+      <convert type="EventName">FullDescription</convert>
+    </widget>
+    <eLabel position="657,510" size="130,28" font="Bold; 24" halign="left" foregroundColor="TextHighlight2" backgroundColor="BackTransparent" transparent="1" valign="bottom" text="Next:" />
+    <widget source="session.Event_Next" render="Label" position="657,544" size="557,153" font="SIDesc; 22" zPosition="1" backgroundColor="BackTransparent" transparent="1" foregroundColor="TextLightDimmed" valign="top">
+      <convert type="EventName">FullDescription</convert>
+    </widget>
 </screen>
 <screen name="ChannelSelection" position="0,0" size="1280,720" title="" flags="wfNoBorder">
 	<widget source="global.CurrentTime" render="Label" position="1150,25" zPosition="0" size="90,35" font="Bold; 28" halign="right" backgroundColor="BackTransparent" transparent="1" foregroundColor="ClockCorner">
@@ -675,7 +693,7 @@
   <ePixmap position="0,0" zPosition="-1" size="130,300" pixmap="infinityHD-GOS/volume/volumebar50_back.png" alphatest="blend" transparent="1" />
   <widget name="Volume" position="37,24" size="59,200" zPosition="1" pixmap="infinityHD-GOS/volume/volumebar50_over.png" transparent="1" orientation="orBottomToTop" alphatest="blend" />
 </screen>
-  <screen backgroundColor="Transparent" flags="wfNoBorder" name="VirtualZapPiconNoPiP" position="center,0" size="1280,720" title="Virtual Zap">
+<screen backgroundColor="Transparent" flags="wfNoBorder" name="VirtualZapPiconNoPiP" position="center,0" size="1280,720" title="Virtual Zap">
     <eLabel position="899,21" size="321,66" backgroundColor="BackTransparent" zPosition="-1" />
     <widget source="global.CurrentTime" render="Label" position="1010,21" size="200,70" font="Bold; 55" valign="top" halign="right" backgroundColor="Black" transparent="1" foregroundColor="ClockInfobar">
       <convert type="ClockToText">Format:%H:%M</convert>
@@ -691,10 +709,12 @@
 	<widget position="314,530" size="90,40" name="NowNum" font="Bold; 33" valign="bottom" halign="center" noWrap="1" backgroundColor="Black" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" foregroundColor="TextHighlight" />
     <widget position="407,530" size="714,40" name="NowChannel" font="Bold; 33" valign="bottom" halign="left" noWrap="1" backgroundColor="Black" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" foregroundColor="TextHighlight" />
     <widget name="vzPicon" position="78,529" size="220,132" zPosition="4" alphatest="blend" transparent="1" />
-    <widget position="316,583" size="655,35" name="NowEPG" font="Regular; 28" valign="bottom" backgroundColor="BackTransparent" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" halign="left" />
-    <widget position="976,583" size="145,35" name="NowTime" font="Regular; 28" valign="bottom" backgroundColor="BackTransparent" shadowColor="#000000" shadowOffset="-1,-1" halign="right" transparent="1" />
-    <widget position="316,624" size="655,35" name="NextEPG" font="Regular; 28" valign="bottom" foregroundColor="TextDimmed" backgroundColor="BackTransparent" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" halign="left" />
-    <widget position="976,624" size="145,35" name="NextTime" font="Regular; 28" valign="bottom" foregroundColor="TextDimmed" backgroundColor="BackTransparent" shadowColor="#000000" shadowOffset="-1,-1" halign="right" transparent="1" />
+ 	<widget position="316,583" size="85,35" name="NowEventStart" font="Regular; 28" valign="bottom" noWrap="1" backgroundColor="BackTransparent" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" halign="left" />
+	<widget position="407,583" size="569,35" name="NowEventTitle" font="Regular; 28" valign="bottom" noWrap="1" backgroundColor="BackTransparent" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" halign="left" />
+	<widget position="976,583" size="145,35" name="NowTime" font="Regular; 28" valign="bottom" backgroundColor="BackTransparent" shadowColor="#000000" shadowOffset="-1,-1" halign="right" transparent="1" />
+	<widget position="316,624" size="85,35" name="NextEventStart" font="Regular; 28" valign="bottom" noWrap="1" foregroundColor="TextDimmed" backgroundColor="BackTransparent" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" halign="left" />
+	<widget position="407,624" size="569,35" name="NextEventTitle" font="Regular; 28" valign="bottom" noWrap="1" foregroundColor="TextDimmed" backgroundColor="BackTransparent" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" halign="left" />
+	<widget position="976,624" size="145,35" name="NextTime" font="Regular; 28" valign="bottom" foregroundColor="TextDimmed" backgroundColor="BackTransparent" shadowColor="#000000" shadowOffset="-1,-1" halign="right" transparent="1" />   
     <widget source="session.RecordState" render="Pixmap" pixmap="infinityHD-GOS/icons/i_rec_kl.png" position="1131,544" zPosition="3" size="36,36" alphatest="on">
       <convert type="ConditionalShowHide" />
     </widget>
@@ -705,7 +725,7 @@
     <ePixmap pixmap="infinityHD-GOS/icons/i_crypt_no_kl.png" position="1171,624" size="36,36" zPosition="1" alphatest="on" />
     <eLabel name="ProgressbarBack" position="315,573" size="807,1" backgroundColor="ProgressbarBack" zPosition="4" />
     <widget name="vzProgress" position="315,572" size="807,3" pixmap="infinityHD-GOS/progressGOS.png" transparent="1" zPosition="5" />
-  </screen>
+</screen>
   <screen name="GraphMultiEPG" position="fill" title="Electronic Program Guide" flags="wfNoBorder">
     <eLabel position="60,25" size="605,35" text="Electronic Program Guide" halign="left" font="Bold; 28" transparent="1" zPosition="2" />
     <eLabel position="60,65" size="1177,2" backgroundColor="TextForeground" zPosition="2" />
@@ -3022,7 +3042,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/AdvancedFreePlayer/AdvancedFreePlayer.png" position="40,85" size="100,40" alphatest="blend" />
 </screen>
 <screen name="AdvancedFreePlayerConfig" position="center,80" size="800,600" title="AdvancedFreePlayer Config">
-    <widget name="config" position="5,5" size="790,590" zPosition="1" transparent="0" scrollbarMode="showOnDemand" />
+    <widget name="config" position="5,5" size="790,515" zPosition="1" transparent="0" scrollbarMode="showOnDemand" />
     <ePixmap position="0,540" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_red.png" alphatest="on" zPosition="2" />
     <ePixmap position="200,540" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_green.png" alphatest="on" zPosition="2" />
     <ePixmap position="400,540" size="200,60" pixmap="infinityHD-GOS/buttons/button_200x60_yellow.png" alphatest="on" zPosition="2" />

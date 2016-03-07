@@ -1,0 +1,194 @@
+<screen backgroundColor="Transparent" flags="wfNoBorder" name="InfoBar" position="center,0" size="1280,720" title="InfoBar">
+    <widget source="global.CurrentTime" render="Label" position="40,16" zPosition="0" size="100,44" font="Bold; 32" halign="left" backgroundColor="BackTransparent" transparent="1" foregroundColor="ClockCorner">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="140,38" zPosition="0" size="221,22" font="Bold; 18" halign="left" backgroundColor="BackTransparent" transparent="1" foregroundColor="KeyGreen">
+      <convert type="ClockToText">Format:%A %d.%m.%Y</convert>
+    </widget>
+    <eLabel position="40,65" size="1200,2" backgroundColor="Stripe" zPosition="2" />
+    <eLabel position="1084,16" size="2,44" backgroundColor="Stripe" zPosition="2" />
+    <eLabel position="918,16" size="2,44" backgroundColor="Stripe" zPosition="2" />
+    <eLabel position="525,16" size="2,44" backgroundColor="Stripe" zPosition="2" />
+	<eLabel position="371,16" size="2,44" backgroundColor="Stripe" zPosition="2" />
+	<eLabel text="Wschód:" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="383,16" size="70,22" zPosition="5" halign="center" transparent="1" />
+	<eLabel text="Zachód:" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="383,38" size="70,22" zPosition="5" halign="center" transparent="1" />
+	<eLabel text="Temp:" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="537,16" size="52,22" zPosition="5" halign="left" transparent="1" />
+	<eLabel text="Wilgotność:" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="747,38" size="108,22" zPosition="5" halign="center" transparent="1" />
+	<eLabel text="Wiatr:" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="747,16" size="61,22" zPosition="5" halign="center" transparent="1" />
+	<eLabel text="Ciśn:" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="537,38" size="52,22" zPosition="5" halign="left" transparent="1" />
+	<eLabel text="Jutro" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="930,16" size="100,22" zPosition="5" halign="center" transparent="1" />
+	<eLabel text="Pojutrze" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="1096,16" size="100,22" zPosition="5" halign="center" transparent="1" />
+	<ePixmap position="0,0" zPosition="-1" size="1280,145" pixmap="infinityHD-GOS/infobar_2up120.png" />
+	<widget alphatest="blend" render="PiconUni" path="weather_icons" position="703,16" size="44,44" source="session.CurrentService" transparent="1" zPosition="5">
+		<convert type="YWeather">picon</convert>
+	</widget>
+	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="855,38" size="53,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="TextHighlight2">
+		<convert type="YWeather">humidity</convert>
+	</widget>
+	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="589,38" size="114,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="TextHighlight2">
+		<convert type="YWeather">pressure</convert>
+	</widget>
+	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="453,16" size="62,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="TextDimmed">
+		<convert type="YWeather">sunrise</convert>
+	</widget>
+	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="453,38" size="62,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="TextDimmed">
+		<convert type="YWeather">sunset</convert>
+	</widget>
+	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="808,16" size="100,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="KeyGreen">
+		<convert type="YWeather">speed</convert>
+	</widget>
+	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="646,16" size="57,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="CS_Marked">
+		<convert type="YWeather">feels</convert>
+	</widget>
+	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="589,16" size="57,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="TextHighlight">
+		<convert type="YWeather">temp</convert>
+	</widget>
+	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 18" render="Label" position="140,16" size="221,22" source="session.CurrentService" zPosition="3" halign="left" transparent="1" foregroundColor="TextHighlight">
+		<convert type="YWeather">city</convert>
+	</widget>
+	<widget alphatest="blend" render="PiconUni" path="weather_icons" position="1030,16" size="44,44" source="session.CurrentService" transparent="1" zPosition="5">
+		<convert type="YWeather">fpicon1</convert>
+	</widget>
+	<widget alphatest="blend" render="PiconUni" path="weather_icons" position="1196,16" size="44,44" source="session.CurrentService" transparent="1" zPosition="5">
+		<convert type="YWeather">fpicon2</convert>
+	</widget>
+	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="930,38" size="100,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="TextHighlight">
+		<convert type="YWeather">ftemp1</convert>
+	</widget>
+	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="1096,38" size="100,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="TextHighlight">
+		<convert type="YWeather">ftemp2</convert>
+	</widget>
+  <ePixmap position="center,485" zPosition="-1" size="1280,295" pixmap="infinityHD-GOS/infobar_2.png" />
+  <widget source="session.RecordState" render="Pixmap" pixmap="infinityHD-GOS/icons/i_rec_kl.png" position="958,675" zPosition="3" size="36,36" alphatest="on">
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="ChannelNumber" position="287,530" size="90,40" font="Bold; 33" valign="bottom" halign="center" transparent="1" backgroundColor="Black" shadowColor="#000000" shadowOffset="-1,-1" noWrap="1" foregroundColor="TextHighlight">
+  </widget>
+  <widget position="380,530" size="709,40" source="session.CurrentService" render="Label" font="Bold; 33" valign="bottom" halign="left" noWrap="1" backgroundColor="Black" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" foregroundColor="TextHighlight">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Picon" position="51,529" size="220,132" zPosition="4" alphatest="blend" transparent="1">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+  <widget position="289,583" size="85,35" source="session.Event_Now" render="Label" font="Regular; 28" valign="bottom" backgroundColor="BackTransparent" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" halign="left">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Format:%H:%M</convert>
+  </widget>
+  <widget position="380,583" size="709,35" source="session.Event_Now" render="Label" font="Regular; 28" valign="bottom" noWrap="1" backgroundColor="BackTransparent" shadowColor="#000000" shadowOffset="-1,-1" transparent="1">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget position="1089,583" size="145,35" source="session.Event_Now" render="Label" font="Regular; 28" valign="bottom" backgroundColor="BackTransparent" shadowColor="#000000" shadowOffset="-1,-1" halign="right" transparent="1">
+    <convert type="EventTime">Remaining</convert>
+    <convert type="RemainingToText">InMinutes</convert>
+  </widget>
+  <widget position="289,624" size="85,35" source="session.Event_Next" render="Label" font="Regular; 28" valign="bottom" backgroundColor="BackTransparent" foregroundColor="TextDimmed" transparent="1" halign="left">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Format:%H:%M</convert>
+  </widget>
+  <widget position="380,624" size="709,35" source="session.Event_Next" render="Label" font="Regular; 28" valign="bottom" noWrap="1" backgroundColor="BackTransparent" foregroundColor="TextDimmed" transparent="1">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget position="1089,624" size="145,35" source="session.Event_Next" render="Label" font="Regular; 28" valign="bottom" backgroundColor="BackTransparent" foregroundColor="TextDimmed" halign="right" transparent="1">
+    <convert type="EventTime">Duration</convert>
+    <convert type="ClockToText">InMinutes</convert>
+  </widget>
+  <ePixmap pixmap="infinityHD-GOS/icons/i_dolby_no_kl.png" position="1077,675" size="36,36" zPosition="1" alphatest="on" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="infinityHD-GOS/icons/i_dolby_kl.png" position="1077,675" size="36,36" zPosition="2" alphatest="on">
+    <convert type="ServiceInfo">IsMultichannel</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap pixmap="infinityHD-GOS/icons/i_format_no_kl.png" position="1158,675" size="36,36" zPosition="1" alphatest="on" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="infinityHD-GOS/icons/i_format_kl.png" position="1158,675" size="36,36" zPosition="2" alphatest="on">
+    <convert type="ServiceInfo">IsWidescreen</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap pixmap="infinityHD-GOS/icons/i_txt_no_kl.png" position="1038,675" size="36,36" zPosition="1" alphatest="on" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="infinityHD-GOS/icons/i_txt_kl.png" position="1038,675" size="36,36" zPosition="2" alphatest="on">
+    <convert type="ServiceInfo">HasTelext</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap pixmap="infinityHD-GOS/icons/i_sd_kl.png" position="1118,675" size="36,36" zPosition="1" alphatest="on" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="infinityHD-GOS/icons/i_hd_kl.png" position="1118,675" size="36,36" zPosition="2" alphatest="on">
+    <convert type="ServiceInfo">VideoWidth</convert>
+    <convert type="ValueRange">800,2000</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap pixmap="infinityHD-GOS/icons/i_crypt_no_kl.png" position="1198,675" size="36,36" zPosition="1" alphatest="on" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="infinityHD-GOS/icons/i_crypt_kl.png" position="1198,675" size="36,36" zPosition="2" alphatest="on">
+    <convert type="ServiceInfo">IsCrypted</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+	<ePixmap pixmap="infinityHD-GOS/icons/i_sub_no_kl.png" position="998,675" size="36,36" zPosition="1" alphatest="on" />
+	<widget source="session.CurrentService" render="Pixmap" pixmap="infinityHD-GOS/icons/i_sub_kl.png" position="998,675" size="36,36" zPosition="2" alphatest="on">
+		<convert type="ServiceInfo">SubtitlesAvailable</convert>
+		<convert type="ConditionalShowHide" />
+	</widget>
+  <widget source="session.Event_Now" render="Progress" position="288,572" size="945,3" pixmap="infinityHD-GOS/progressGOS.png" transparent="1" zPosition="5">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+  <eLabel name="ProgressbarBack" position="288,573" size="945,1" backgroundColor="ProgressbarBack" zPosition="4" />
+  <eLabel position="40,665" size="1200,2" backgroundColor="Stripe" />
+  <eLabel text="Snr:" position="716,675" size="50,22" font="Bold; 18" valign="center" backgroundColor="BackTransparent" foregroundColor="TextDimmed" transparent="1" />
+  <widget source="session.FrontendStatus" render="Label" position="766,675" size="50,22" font="Bold; 18" valign="center" backgroundColor="BackTransparent" transparent="1" foregroundColor="Stripe">
+    <convert type="FrontendInfo">SNR</convert>
+  </widget>
+  
+  
+  
+  
+  <eLabel text="Tuner:" position="478,675" size="60,22" font="Bold; 18" valign="center" backgroundColor="BackTransparent" foregroundColor="TextDimmed" transparent="1" />
+  <widget source="session.TunerInfo" render="FixedLabel" position="538,675" size="22,22" backgroundColor="BackTransparent" transparent="1" zPosition="2" text="A" foregroundColor="TextHighlight" font="Bold; 18" halign="center">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">1</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.TunerInfo" render="FixedLabel" position="560,675" size="22,22" backgroundColor="BackTransparent" transparent="1" zPosition="2" text="B" foregroundColor="TextHighlight" font="Bold; 18" halign="center">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">2</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.TunerInfo" render="FixedLabel" position="582,675" size="22,22" backgroundColor="BackTransparent" transparent="1" zPosition="2" text="C" foregroundColor="TextHighlight" font="Bold; 18" halign="center">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">4</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.TunerInfo" render="FixedLabel" position="604,675" size="22,22" backgroundColor="BackTransparent" transparent="1" zPosition="2" text="D" foregroundColor="TextHighlight" font="Bold; 18" halign="center">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">8</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="FixedLabel" position="538,675" size="22,22" backgroundColor="BackTransparent" transparent="1" zPosition="3" text="A" foregroundColor="KeyGreen" font="Bold; 18" halign="center">
+    <convert type="FrontendInfo">NUMBER</convert>
+    <convert type="ValueRange">0,0</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="FixedLabel" position="560,675" size="22,22" backgroundColor="BackTransparent" transparent="1" zPosition="3" text="B" foregroundColor="KeyGreen" font="Bold; 18" halign="center">
+    <convert type="FrontendInfo">NUMBER</convert>
+    <convert type="ValueRange">1,1</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="FixedLabel" position="582,675" size="22,22" backgroundColor="BackTransparent" transparent="1" zPosition="3" text="C" foregroundColor="KeyGreen" font="Bold; 18" halign="center">
+    <convert type="FrontendInfo">NUMBER</convert>
+    <convert type="ValueRange">2,2</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="FixedLabel" position="604,675" size="22,22" backgroundColor="BackTransparent" transparent="1" zPosition="3" text="D" foregroundColor="KeyGreen" font="Bold; 18" halign="center">
+    <convert type="FrontendInfo">NUMBER</convert>
+    <convert type="ValueRange">3,3</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+	<widget source="session.CurrentService" render="Label" position="826,675" size="53,22" font="Bold; 18" halign="right" valign="center" backgroundColor="BackTransparent" transparent="1">
+		<convert type="ServiceInfo">VideoWidth</convert>
+	</widget>
+	<eLabel text="x" position="879,675" size="16,22" font="Bold; 18" halign="center" valign="center" backgroundColor="BackTransparent" transparent="1" />
+	<widget source="session.CurrentService" render="Label" position="895,675" size="53,22" font="Bold; 18" halign="left" valign="center" backgroundColor="BackTransparent" transparent="1">
+		<convert type="ServiceInfo">VideoHeight</convert>
+	</widget>
+
+    <widget source="session.CurrentService" render="Label" position="626,675" size="80,22" backgroundColor="BackTransparent" halign="center" transparent="1" zPosition="1" text="DVB-S" font="Bold; 18" foregroundColor="KeyGreen">
+      <convert type="ServiceOrbitalPosition" />
+    </widget>
+<widget source="session.CurrentService" render="inHDGOSDMCHDCaids" position="51,675" size="377,22" zPosition="3" font="Bold;18" transparent="1" ecmColor="KeyGreen" emmColor="TextHighlight" nocColor="TextDimmed" backgroundColor="BackTransparent">
+  <convert type="inHDGOSDMCHDCaidDisplay">Default</convert>
+</widget>
+</screen>
