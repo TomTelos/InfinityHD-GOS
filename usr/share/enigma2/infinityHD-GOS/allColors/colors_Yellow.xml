@@ -21,9 +21,9 @@
 	<color name="BigDateInfobar" value="#00a5a5a5" />
     <color name="CS_Event" value="#00bf9217" />
 	<color name="CS_EventSelect" value="#00ffffff" />
-	<color name="CS_Progress" value="#00bf9217" />
+	<color name="CS_Progress" value="#00ffffff" />
 	<color name="CS_ProgressSelect" value="#00ffffff" />
-	<color name="CS_ProgressBorder" value="#00bf9217" />
+	<color name="CS_ProgressBorder" value="#00ffffff" />
 	<color name="CS_ProgressBorderSelect" value="#00ffffff" />
 	<color name="CS_ServiceNotAvail" value="#003f3f3f" />
 	<color name="CS_Marked" value="#00ff0000" />
