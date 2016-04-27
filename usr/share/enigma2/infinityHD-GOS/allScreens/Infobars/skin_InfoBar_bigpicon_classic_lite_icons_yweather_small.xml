@@ -4,32 +4,32 @@
   <eLabel position="60,21" size="321,66" backgroundColor="BackTransparent" zPosition="-1" />
   <eLabel text="Yahoo!" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="60,22" size="62,22" zPosition="5" halign="center" transparent="1" />
   <eLabel text="-" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="313,66" size="10,22" zPosition="5" halign="center" transparent="1" />
-  <widget alphatest="blend" render="PiconUni" path="weather_icons" position="189,22" size="62,62" source="session.CurrentService" transparent="1" zPosition="5">
-    <convert type="YWeather">picon</convert>
+  <widget alphatest="blend" render="inHDGOSPiconWeather" path="weather_icons" position="189,22" size="62,62" source="session.CurrentService" transparent="1" zPosition="5">
+    <convert type="inHDGOSYWeather">picon</convert>
   </widget>
   <widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="60,44" size="62,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="TextHighlight2">
-    <convert type="YWeather">humidity</convert>
+    <convert type="inHDGOSYWeather">humidity</convert>
   </widget>
   <widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="60,66" size="124,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="TextHighlight">
-    <convert type="YWeather">ftemp0</convert>
+    <convert type="inHDGOSYWeather">ftemp0</convert>
   </widget>
   <widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="256,44" size="124,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1">
-    <convert type="YWeather">pressure</convert>
+    <convert type="inHDGOSYWeather">pressure</convert>
   </widget>
   <widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="256,66" size="62,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1">
-    <convert type="YWeather">sunrise</convert>
+    <convert type="inHDGOSYWeather">sunrise</convert>
   </widget>
   <widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="318,66" size="62,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1">
-    <convert type="YWeather">sunset</convert>
+    <convert type="inHDGOSYWeather">sunset</convert>
   </widget>
   <widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="256,22" size="124,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1">
-    <convert type="YWeather">speed</convert>
+    <convert type="inHDGOSYWeather">speed</convert>
   </widget>
   <widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="122,44" size="62,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="CS_Marked">
-    <convert type="YWeather">feels</convert>
+    <convert type="inHDGOSYWeather">feels</convert>
   </widget>
   <widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="122,22" size="62,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="KeyGreen">
-    <convert type="YWeather">temp</convert>
+    <convert type="inHDGOSYWeather">temp</convert>
   </widget>
   <widget source="global.CurrentTime" render="Label" position="1010,21" size="200,70" font="Bold; 55" valign="top" halign="right" backgroundColor="Black" transparent="1" foregroundColor="ClockInfobar">
     <convert type="ClockToText">Format:%H:%M</convert>

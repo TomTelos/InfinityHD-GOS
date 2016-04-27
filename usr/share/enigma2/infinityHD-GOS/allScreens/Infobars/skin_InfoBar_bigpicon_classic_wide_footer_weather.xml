@@ -19,44 +19,44 @@
 	<eLabel text="Jutro" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="930,16" size="100,22" zPosition="5" halign="center" transparent="1" />
 	<eLabel text="Pojutrze" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="1096,16" size="100,22" zPosition="5" halign="center" transparent="1" />
 	<ePixmap position="0,0" zPosition="-1" size="1280,145" pixmap="infinityHD-GOS/infobar_2up120.png" />
-	<widget alphatest="blend" render="PiconUni" path="weather_icons" position="703,16" size="44,44" source="session.CurrentService" transparent="1" zPosition="5">
-		<convert type="YWeather">picon</convert>
+	<widget alphatest="blend" render="inHDGOSPiconWeather" path="weather_icons" position="703,16" size="44,44" source="session.CurrentService" transparent="1" zPosition="5">
+		<convert type="inHDGOSYWeather">picon</convert>
 	</widget>
 	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="855,38" size="53,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="TextHighlight2">
-		<convert type="YWeather">humidity</convert>
+		<convert type="inHDGOSYWeather">humidity</convert>
 	</widget>
 	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="589,38" size="114,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="TextHighlight2">
-		<convert type="YWeather">pressure</convert>
+		<convert type="inHDGOSYWeather">pressure</convert>
 	</widget>
 	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="453,16" size="62,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="TextDimmed">
-		<convert type="YWeather">sunrise</convert>
+		<convert type="inHDGOSYWeather">sunrise</convert>
 	</widget>
 	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="453,38" size="62,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="TextDimmed">
-		<convert type="YWeather">sunset</convert>
+		<convert type="inHDGOSYWeather">sunset</convert>
 	</widget>
 	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="808,16" size="100,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="KeyGreen">
-		<convert type="YWeather">speed</convert>
+		<convert type="inHDGOSYWeather">speed</convert>
 	</widget>
 	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="646,16" size="57,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="CS_Marked">
-		<convert type="YWeather">feels</convert>
+		<convert type="inHDGOSYWeather">feels</convert>
 	</widget>
 	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="589,16" size="57,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="TextHighlight">
-		<convert type="YWeather">temp</convert>
+		<convert type="inHDGOSYWeather">temp</convert>
 	</widget>
 	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 18" render="Label" position="140,16" size="221,22" source="session.CurrentService" zPosition="3" halign="left" transparent="1" foregroundColor="TextHighlight">
-		<convert type="YWeather">city</convert>
+		<convert type="inHDGOSYWeather">city</convert>
 	</widget>
-	<widget alphatest="blend" render="PiconUni" path="weather_icons" position="1030,16" size="44,44" source="session.CurrentService" transparent="1" zPosition="5">
-		<convert type="YWeather">fpicon1</convert>
+	<widget alphatest="blend" render="inHDGOSPiconWeather" path="weather_icons" position="1030,16" size="44,44" source="session.CurrentService" transparent="1" zPosition="5">
+		<convert type="inHDGOSYWeather">fpicon1</convert>
 	</widget>
-	<widget alphatest="blend" render="PiconUni" path="weather_icons" position="1196,16" size="44,44" source="session.CurrentService" transparent="1" zPosition="5">
-		<convert type="YWeather">fpicon2</convert>
+	<widget alphatest="blend" render="inHDGOSPiconWeather" path="weather_icons" position="1196,16" size="44,44" source="session.CurrentService" transparent="1" zPosition="5">
+		<convert type="inHDGOSYWeather">fpicon2</convert>
 	</widget>
 	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="930,38" size="100,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="TextHighlight">
-		<convert type="YWeather">ftemp1</convert>
+		<convert type="inHDGOSYWeather">ftemp1</convert>
 	</widget>
 	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="1096,38" size="100,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="TextHighlight">
-		<convert type="YWeather">ftemp2</convert>
+		<convert type="inHDGOSYWeather">ftemp2</convert>
 	</widget>
   <ePixmap position="center,485" zPosition="-1" size="1280,295" pixmap="infinityHD-GOS/infobar_2.png" />
   <widget source="session.RecordState" render="Pixmap" pixmap="infinityHD-GOS/icons/i_rec_kl.png" position="958,675" zPosition="3" size="36,36" alphatest="on">
