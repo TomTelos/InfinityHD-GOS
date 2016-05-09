@@ -1,63 +1,79 @@
 <skin>
 <screen backgroundColor="Transparent" flags="wfNoBorder" name="InfoBar" position="center,0" size="1280,720" title="InfoBar">
-    <widget source="global.CurrentTime" render="Label" position="40,16" zPosition="0" size="100,44" font="Bold; 32" halign="left" backgroundColor="BackTransparent" transparent="1" foregroundColor="ClockCorner">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="140,38" zPosition="0" size="221,22" font="Bold; 18" halign="left" backgroundColor="BackTransparent" transparent="1" foregroundColor="KeyGreen">
+    <widget source="global.CurrentTime" render="Label" position="40,38" zPosition="0" size="221,22" font="Bold; 18" halign="left" backgroundColor="BackTransparent" transparent="1" foregroundColor="TextHighlight2" text="poniedziałek 22.12.2016">
       <convert type="ClockToText">Format:%A %d.%m.%Y</convert>
     </widget>
-    <eLabel position="40,65" size="1200,2" backgroundColor="Stripe" zPosition="2" />
-    <eLabel position="1084,16" size="2,44" backgroundColor="Stripe" zPosition="2" />
-    <eLabel position="918,16" size="2,44" backgroundColor="Stripe" zPosition="2" />
-    <eLabel position="525,16" size="2,44" backgroundColor="Stripe" zPosition="2" />
-	<eLabel position="371,16" size="2,44" backgroundColor="Stripe" zPosition="2" />
-	<eLabel text="Wschód:" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="383,16" size="70,22" zPosition="5" halign="center" transparent="1" />
-	<eLabel text="Zachód:" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="383,38" size="70,22" zPosition="5" halign="center" transparent="1" />
-	<eLabel text="Temp:" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="537,16" size="52,22" zPosition="5" halign="left" transparent="1" />
-	<eLabel text="Wilgotność:" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="747,38" size="108,22" zPosition="5" halign="center" transparent="1" />
-	<eLabel text="Wiatr:" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="747,16" size="61,22" zPosition="5" halign="center" transparent="1" />
-	<eLabel text="Ciśn:" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="537,38" size="52,22" zPosition="5" halign="left" transparent="1" />
-	<eLabel text="Jutro" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="930,16" size="100,22" zPosition="5" halign="center" transparent="1" />
-	<eLabel text="Pojutrze" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="1096,16" size="100,22" zPosition="5" halign="center" transparent="1" />
+    <eLabel position="40,65" size="1200,2" backgroundColor="Stripe" zPosition="2" /> 
+    <eLabel position="768,16" size="2,44" backgroundColor="Stripe" zPosition="2" />
+    <eLabel position="396,16" size="2,44" backgroundColor="Stripe" zPosition="2" />	
+	<eLabel position="271,16" size="2,44" backgroundColor="Stripe" zPosition="2" />	
+	<eLabel text="Wsch:" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="282,16" size="49,22" zPosition="5" halign="left" transparent="1" />
+	<eLabel text="Zach:" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="282,38" size="49,22" zPosition="5" halign="left" transparent="1" />
+	<eLabel text="Temp:" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="407,16" size="50,22" zPosition="5" halign="left" transparent="1" />
+	<eLabel text="Wilg:" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="407,38" size="50,22" zPosition="5" halign="center" transparent="1" />
+	<eLabel text="Wiatr:" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="581,16" size="60,22" zPosition="5" halign="center" transparent="1" />
+	<eLabel text="Ciśni:" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="581,38" size="60,22" zPosition="5" halign="center" transparent="1" />
+	<eLabel text="Dziś" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="780,16" size="100,22" zPosition="5" halign="center" transparent="1" foregroundColor="TextHighlight" />
+	
+	<eLabel text="Jutro" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="938,16" size="100,22" zPosition="5" halign="center" transparent="1" foregroundColor="TextHighlight" />
+	<eLabel text="Pojutrze" noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" position="1096,16" size="100,22" zPosition="5" halign="center" transparent="1" foregroundColor="TextHighlight" />
 	<ePixmap position="0,0" zPosition="-1" size="1280,145" pixmap="infinityHD-GOS/infobar_2up120.png" />
-	<widget alphatest="blend" render="inHDGOSPiconWeather" path="weather_icons" position="703,16" size="44,44" source="session.CurrentService" transparent="1" zPosition="5">
-		<convert type="inHDGOSYWeather">picon</convert>
+	<widget alphatest="blend" render="Picon" path="/usr/local/share/enigma2/weather_icons" position="530,16" size="44,44" source="session.CurrentService" transparent="1" zPosition="5">
+		<convert type="inHDGOSVWeather2">currentWeatherPicon</convert>
 	</widget>
-	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="855,38" size="53,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="TextHighlight2">
-		<convert type="inHDGOSYWeather">humidity</convert>
+	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="457,38" size="70,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="KeyGreen">
+		<convert type="inHDGOSVWeather2">atmoHumidity</convert>
 	</widget>
-	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="589,38" size="114,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="TextHighlight2">
-		<convert type="inHDGOSYWeather">pressure</convert>
+	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="641,38" size="117,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="KeyGreen">
+		<convert type="inHDGOSVWeather2">atmoPressure</convert>
 	</widget>
-	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="453,16" size="62,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="TextDimmed">
-		<convert type="inHDGOSYWeather">sunrise</convert>
+	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="331,16" size="55,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="Grey">
+		<convert type="inHDGOSVWeather2">astroSunrise</convert>
 	</widget>
-	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="453,38" size="62,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="TextDimmed">
-		<convert type="inHDGOSYWeather">sunset</convert>
+	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="331,38" size="55,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="Grey">
+		<convert type="inHDGOSVWeather2">astroSunset</convert>
 	</widget>
-	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="808,16" size="100,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="KeyGreen">
-		<convert type="inHDGOSYWeather">speed</convert>
+	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="641,16" size="117,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="KeyGreen">
+		<convert type="inHDGOSVWeather2">windSpeed</convert>
 	</widget>
-	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="646,16" size="57,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="CS_Marked">
-		<convert type="inHDGOSYWeather">feels</convert>
+	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="457,16" size="70,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="CS_Marked">
+		<convert type="inHDGOSVWeather2">currentWeatherTemp</convert>
 	</widget>
-	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="589,16" size="57,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="TextHighlight">
-		<convert type="inHDGOSYWeather">temp</convert>
+<!-- 	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="587,16" size="57,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="TextHighlight">
+		<convert type="inHDGOSVWeather2">temp</convert>
+	</widget> -->
+	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 18" render="Label" position="40,16" size="221,22" source="session.CurrentService" zPosition="3" halign="left" transparent="1" foregroundColor="TextHighlight2">
+		<convert type="inHDGOSVWeather2">currentLocation</convert>
 	</widget>
-	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 18" render="Label" position="140,16" size="221,22" source="session.CurrentService" zPosition="3" halign="left" transparent="1" foregroundColor="TextHighlight">
-		<convert type="inHDGOSYWeather">city</convert>
+	<widget alphatest="blend" render="Picon" path="/usr/local/share/enigma2/weather_icons" position="880,16" size="44,44" source="session.CurrentService" transparent="1" zPosition="5">
+		<convert type="inHDGOSVWeather2">forecastTodayPicon</convert>
 	</widget>
-	<widget alphatest="blend" render="inHDGOSPiconWeather" path="weather_icons" position="1030,16" size="44,44" source="session.CurrentService" transparent="1" zPosition="5">
-		<convert type="inHDGOSYWeather">fpicon1</convert>
+	<widget alphatest="blend" render="Picon" path="/usr/local/share/enigma2/weather_icons" position="1038,16" size="44,44" source="session.CurrentService" transparent="1" zPosition="5">
+		<convert type="inHDGOSVWeather2">forecastTomorrowPicon</convert>
 	</widget>
-	<widget alphatest="blend" render="inHDGOSPiconWeather" path="weather_icons" position="1196,16" size="44,44" source="session.CurrentService" transparent="1" zPosition="5">
-		<convert type="inHDGOSYWeather">fpicon2</convert>
+	<widget alphatest="blend" render="Picon" path="/usr/local/share/enigma2/weather_icons" position="1196,16" size="44,44" source="session.CurrentService" transparent="1" zPosition="5">
+		<convert type="inHDGOSVWeather2">forecastTomorrow1Picon</convert>
 	</widget>
-	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="930,38" size="100,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="TextHighlight">
-		<convert type="inHDGOSYWeather">ftemp1</convert>
+	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="830,38" size="50,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="TextHighlight2">
+		<convert type="inHDGOSVWeather2">forecastTodayTempMin</convert>
 	</widget>
-	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="1096,38" size="100,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="TextHighlight">
-		<convert type="inHDGOSYWeather">ftemp2</convert>
+	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="780,38" size="50,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="CS_Marked">
+		<convert type="inHDGOSVWeather2">forecastTodayTempMax</convert>
+	</widget>
+	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="988,38" size="50,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="TextHighlight2">
+		<convert type="inHDGOSVWeather2">forecastTomorrowTempMin</convert>
+	</widget>
+	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="938,38" size="50,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="CS_Marked">
+		<convert type="inHDGOSVWeather2">forecastTomorrowTempMax</convert>
+	</widget>
+	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="1146,38" size="50,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="TextHighlight2">
+		<convert type="inHDGOSVWeather2">forecastTomorrow1TempMin</convert>
+	</widget>
+	<widget noWrap="1" backgroundColor="BackTransparent" font="Bold; 16" render="Label" position="1096,38" size="50,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1" foregroundColor="CS_Marked">
+		<convert type="inHDGOSVWeather2">forecastTomorrow1TempMax</convert>
+	</widget>
+    <widget source="global.CurrentTime" render="Label" position="1089,530" size="145,40" font="Bold; 33" valign="bottom" halign="right" backgroundColor="Black" transparent="1" foregroundColor="ClockCorner">
+	<convert type="ClockToText">Format:%H:%M</convert>
 	</widget>
   <ePixmap position="center,485" zPosition="-1" size="1280,295" pixmap="infinityHD-GOS/infobar_2.png" />
   <widget source="session.RecordState" render="Pixmap" pixmap="infinityHD-GOS/icons/i_rec_kl.png" position="958,675" zPosition="3" size="36,36" alphatest="on">
