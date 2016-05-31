@@ -2,7 +2,7 @@
   <!-- infinityHD-GOS for Graterlia OS by TomTelos -->
   <!-- based on dreamTV-HD Skin by Kerni and infinityHD for newnigma -->
   <!-- this skin is continue of the inifinityHD-nBox by herpoi -->
-  <!-- version 2016-05-08 -->
+  <!-- version 2016-05-31 -->
   <output id="0">
     <resolution xres="1280" yres="720" bpp="32" />
   </output>
@@ -670,7 +670,7 @@
     <ePixmap position="center,519" zPosition="-1" size="1280,295" pixmap="infinityHD-GOS/infobar_2.png" />
     <widget position="287,560" size="90,40" name="NowNum" font="Bold; 33" valign="bottom" halign="center" noWrap="1" backgroundColor="Black" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" foregroundColor="TextHighlight" />
     <widget position="380,560" size="709,40" name="NowChannel" font="Bold; 33" valign="bottom" halign="left" noWrap="1" backgroundColor="Black" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" foregroundColor="TextHighlight" />
-    <widget name="vzPicon" position="51,564" size="220,132" zPosition="4" alphatest="blend" transparent="1" />
+    <widget name="vzPicon" position="51,560" size="220,132" zPosition="4" alphatest="blend" transparent="1" />
     <widget position="289,613" size="85,35" name="NowEventStart" font="Regular; 28" valign="bottom" noWrap="1" backgroundColor="BackTransparent" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" halign="left" />
     <widget position="380,613" size="704,35" name="NowEventTitle" font="Regular; 28" valign="bottom" noWrap="1" backgroundColor="BackTransparent" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" halign="left" />
     <widget position="1089,613" size="145,35" name="NowTime" font="Regular; 28" valign="bottom" backgroundColor="BackTransparent" shadowColor="#000000" shadowOffset="-1,-1" halign="right" transparent="1" />
