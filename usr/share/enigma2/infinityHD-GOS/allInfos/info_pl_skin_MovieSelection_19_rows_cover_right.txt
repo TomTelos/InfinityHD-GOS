@@ -1,1 +1,1 @@
-﻿Wymaga wtyczki: coverfind [autor: TomTelos]
+﻿Wymaga wtyczki: coverfind [@TomTelos]

@@ -1,1 +1,1 @@
-Wymaga paczki picon-weather-style[autor: TomTelos]
+Wymaga paczki picon-weather-style [@TomTelos]

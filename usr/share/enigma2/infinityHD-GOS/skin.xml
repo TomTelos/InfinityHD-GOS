@@ -2,7 +2,7 @@
   <!-- infinityHD-GOS for Graterlia OS by TomTelos -->
   <!-- based on dreamTV-HD Skin by Kerni and infinityHD for newnigma -->
   <!-- this skin is continue of the inifinityHD-nBox by herpoi -->
-  <!-- version 2016-07-01 -->
+  <!-- version 2016-07-13 -->
   <output id="0">
     <resolution xres="1280" yres="720" bpp="32" />
   </output>
@@ -2842,7 +2842,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget position="640,655" size="195,46" source="key_yellow" render="Label" font="Bold;19" halign="center" valign="center" backgroundColor="KeyYellowBack" transparent="1" zPosition="3" />
     <widget position="840,655" size="195,46" source="key_blue" render="Label" font="Bold;19" halign="center" valign="center" backgroundColor="KeyBlueBack" transparent="1" zPosition="3" />
 	<widget name="PreviewPicture" position="40,380" size="400,225" alphatest="on" />
-	<widget name="filelist" position="461,85" size="779,540" zPosition="1" font="Regular;20" transparent="1" scrollbarMode="showOnDemand" />
+	<widget name="filelist" position="461,85" size="779,540" zPosition="1" font0="Regular;20" font1="Regular;16" DimText0="60,2,779,22" DimText1="80,24,779,32" DimPIC="2,2,54,54" transparent="1" scrollbarMode="showOnDemand" />
 </screen>
 <screen name="UserSkinEditScreens" position="0,0" size="1280,720" title="UserSkin EditScreens" flags="wfNoBorder">
 	<widget source="global.CurrentTime" render="Label" position="1150,25" zPosition="0" size="90,35" font="Bold; 28" halign="right" backgroundColor="BackTransparent" transparent="1" foregroundColor="ClockCorner">
